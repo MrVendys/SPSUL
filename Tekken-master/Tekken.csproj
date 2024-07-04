@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25C72D15-CE7C-4520-9543-5C7C3451EC02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tekken</RootNamespace>
+    <AssemblyName>Tekken</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Circle.Designer.cs">
+      <DependentUpon>Circle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Fighter.cs" />
+    <Compile Include="FighterModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FighterModel.Designer.cs">
+      <DependentUpon>FighterModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fighters.cs" />
+    <Compile Include="FighterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FighterSelect.Designer.cs">
+      <DependentUpon>FighterSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMinigame.cs" />
+    <Compile Include="MathCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathCalc.Designer.cs">
+      <DependentUpon>MathCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pong.Designer.cs">
+      <DependentUpon>Pong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TekkenConsole.cs" />
+    <Compile Include="WaveMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaveMatch.Designer.cs">
+      <DependentUpon>WaveMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letters.Designer.cs">
+      <DependentUpon>Letters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Targets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Targets.Designer.cs">
+      <DependentUpon>Targets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinnerForm.Designer.cs">
+      <DependentUpon>WinnerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Circle.resx">
+      <DependentUpon>Circle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FighterModel.resx">
+      <DependentUpon>FighterModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FighterSelect.resx">
+      <DependentUpon>FighterSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathCalc.resx">
+      <DependentUpon>MathCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pong.resx">
+      <DependentUpon>Pong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaveMatch.resx">
+      <DependentUpon>WaveMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letters.resx">
+      <DependentUpon>Letters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Targets.resx">
+      <DependentUpon>Targets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinnerForm.resx">
+      <DependentUpon>WinnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
