@@ -1,7 +1,5 @@
 # Půlročníkovka (Záznamník)
 
-![Kreslení Kruhů](screenshot.png)
-
 ## 📜 Popis projektu
 
 Projekt v rámci předmětu na střední škole. Za úkol bylo za půl roku vytvořit projekt s následujícími požadavky:
