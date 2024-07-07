@@ -1,17 +1,15 @@
 # 2048 Game
 
-![2048 Game](2048-png.png)
-
 ## 📜 Popis projektu
 
 Tento projekt je implementací populární hry **2048** v jazyce **C#**. Hra umožňuje hráčům sloučit dlaždice se stejnými hodnotami a dosáhnout tak dlaždice s hodnotou 2048. Cílem je dosažení co nejvyššího skóre.
 
 ## 🎮 Funkce hry
 
-- Pohyb dlaždic pomocí šipek na klávesnici.
+- Pohyb dlaždic pomocí WASD na klávesnici.
 - Automatické sloučení dlaždic při jejich styku.
 - Výpočet skóre na základě hodnot sloučených dlaždic.
-- Možnost restartu hry.
+- Možnost restartu hry s uložením nejvyššího score.
 
 ## 🔧 Požadavky
 
@@ -37,12 +35,11 @@ Tento projekt je implementací populární hry **2048** v jazyce **C#**. Hra umo
 
 ## 📂 Struktura projektu
 
-- **2048Game.sln**: Hlavní řešení projektu.
+- **2048.sln**: Hlavní řešení projektu.
 - **Program.cs**: Hlavní vstupní bod aplikace.
-- **GameLogic.cs**: Implementace logiky hry.
-- **GameForm.cs**: Grafické rozhraní hry pomocí Windows Forms.
+- **Form1.cs**: Logika i grafické rozhraní pomocí Windows Forms.
 
 ## 📸 Ukázka hry
 
-![Screenshot hry 2048](screenshot.png)
+![Screenshot hry 2048](2048_screenshot.png)
 
