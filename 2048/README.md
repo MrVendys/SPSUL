@@ -1,6 +1,6 @@
 # 2048 Game
 
-![2048 Game](screenshot.png)
+![2048 Game](2048-png.png)
 
 ## 📜 Popis projektu
 
