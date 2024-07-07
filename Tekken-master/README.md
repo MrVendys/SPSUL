@@ -1,7 +1,5 @@
 # Tekken-master
 
-![Kreslení Kruhů](screenshot.png)
-
 ## 📜 Popis projektu
 
 Tento projekt je imitací 2D hry Tekken v jazyce **C#**. Hráč si vybere charakter, za který bude bojovat a za pomocí miniher sbírá score, které poté promění na poškození do protihráče.
