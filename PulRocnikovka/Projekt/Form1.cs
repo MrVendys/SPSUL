@@ -23,9 +23,9 @@ namespace Projekt
         public Form1()
         {
             InitializeComponent();
-            //lines = File.ReadAllLines(filePath).ToList();  
-            Connectdb();
-            Count();
+            //Není připojená DB (MySQL)
+            //Connectdb();
+            //Count();
             label1.BackColor = System.Drawing.Color.Transparent;
             label2.BackColor = System.Drawing.Color.Transparent;
             label3.BackColor = System.Drawing.Color.Transparent;

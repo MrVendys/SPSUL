@@ -10,9 +10,6 @@ using System.Windows.Forms;
 
 namespace PrikazoveVykreslovani
 {
-    // 14.9.2020 13:41 -> Max Kučera: Žáci jsou věční! 
-
-    // http://oddtgames.cz/tests.php
 
     public partial class CommandForm : Form
     {
@@ -101,5 +98,6 @@ namespace PrikazoveVykreslovani
         private void OkButton_Click(object sender, EventArgs e) {
             this.Close();
         }
+
     }
 }

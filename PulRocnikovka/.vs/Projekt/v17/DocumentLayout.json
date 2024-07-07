@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\",
+  "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\desktop\\bordel\\spsul\\repos\\projekt\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\desktop\\bordel\\spsul\\repos\\projekt\\projekt\\edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\projekt\\edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\desktop\\bordel\\spsul\\repos\\projekt\\projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\projects\\spsul\\pulrocnikovka\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\projects\\spsul\\pulrocnikovka\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,24 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs",
+              "RelativeDocumentMoniker": "Projekt\\Form1.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs",
+              "RelativeToolTip": "Projekt\\Form1.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAtwJgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:39:12.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Edit.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\Projekt\\Edit.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Edit.cs",
               "RelativeDocumentMoniker": "Projekt\\Edit.cs",
-              "ToolTip": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\Projekt\\Edit.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Edit.cs [N\u00E1vrh]",
               "RelativeToolTip": "Projekt\\Edit.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T05:04:49.765Z",
@@ -38,11 +55,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Invoice.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\Projekt\\Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Invoice.cs",
               "RelativeDocumentMoniker": "Projekt\\Invoice.cs",
-              "ToolTip": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\Projekt\\Invoice.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Invoice.cs [N\u00E1vrh]",
               "RelativeToolTip": "Projekt\\Invoice.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T05:04:46.415Z",
@@ -50,11 +67,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\Projekt\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs",
               "RelativeDocumentMoniker": "Projekt\\Form1.cs",
-              "ToolTip": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Projekt\\Projekt\\Form1.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs [N\u00E1vrh]",
               "RelativeToolTip": "Projekt\\Form1.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T05:04:35.369Z",

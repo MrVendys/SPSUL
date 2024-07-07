@@ -1,12 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Venca\\Desktop\\Bordel\\SPSUL\\repos\\Prace\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5390E3A4-34BB-471A-9F7F-ADEF7784576F}|Prace\\Prace.csproj|c:\\users\\venca\\projects\\spsul\\gameoflife\\prace\\bunka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5390E3A4-34BB-471A-9F7F-ADEF7784576F}|Prace\\Prace.csproj|solutionrelative:prace\\bunka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5390E3A4-34BB-471A-9F7F-ADEF7784576F}|Prace\\Prace.csproj|c:\\users\\venca\\projects\\spsul\\gameoflife\\prace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5390E3A4-34BB-471A-9F7F-ADEF7784576F}|Prace\\Prace.csproj|solutionrelative:prace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5390E3A4-34BB-471A-9F7F-ADEF7784576F}|Prace\\Prace.csproj|c:\\users\\venca\\projects\\spsul\\gameoflife\\prace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5390E3A4-34BB-471A-9F7F-ADEF7784576F}|Prace\\Prace.csproj|solutionrelative:prace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bunka.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\Prace\\Bunka.cs",
+              "RelativeDocumentMoniker": "Prace\\Bunka.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\Prace\\Bunka.cs",
+              "RelativeToolTip": "Prace\\Bunka.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:36:50.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\Prace\\Form1.cs",
+              "RelativeDocumentMoniker": "Prace\\Form1.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\Prace\\Form1.cs",
+              "RelativeToolTip": "Prace\\Form1.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:33:58.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\Prace\\Form1.cs",
+              "RelativeDocumentMoniker": "Prace\\Form1.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\GameOfLife\\Prace\\Form1.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Prace\\Form1.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:33:55.195Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

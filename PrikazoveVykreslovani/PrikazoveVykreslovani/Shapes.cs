@@ -14,8 +14,7 @@ namespace PrikazoveVykreslovani
         Cross,
         Line,
         Triangle,
-        Hexagon,
-        Arrow
+        Hexagon
     }
 
     public class Shape
@@ -132,6 +131,24 @@ namespace PrikazoveVykreslovani
             g.DrawEllipse(visualizePen,
                 start.X, start.Y,
                 end.X - start.X, end.Y - start.Y);
+        }
+        public override void DrawInSize(Graphics g, Point pos, Size siz)
+        {
+            float ratioX = (float)siz.Width / 400;
+            float ratioY = (float)siz.Height / 400;
+
+            if (filled)
+            {
+                g.FillRectangle(new SolidBrush(color),
+                    pos.X + start.X * ratioX, pos.Y + start.Y * ratioY,
+                    (end.X - start.X) * ratioX, (end.Y - start.Y) * ratioY);
+            }
+            else
+            {
+                g.DrawRectangle(new Pen(color, lineWidth),
+                pos.X + start.X * ratioX, pos.Y + start.Y * ratioY,
+                (end.X - start.X) * ratioX, (end.Y - start.Y) * ratioY);
+            }
         }
     }
 

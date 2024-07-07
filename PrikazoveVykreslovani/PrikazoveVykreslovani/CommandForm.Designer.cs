@@ -37,7 +37,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(9, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 400);
             this.panel1.TabIndex = 0;
@@ -51,7 +51,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(413, 10);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(287, 47);
             this.comboBox1.TabIndex = 1;
@@ -60,7 +60,7 @@
             // colorButton
             // 
             this.colorButton.Location = new System.Drawing.Point(414, 61);
-            this.colorButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.colorButton.Margin = new System.Windows.Forms.Padding(2);
             this.colorButton.Name = "colorButton";
             this.colorButton.Size = new System.Drawing.Size(286, 50);
             this.colorButton.TabIndex = 2;
@@ -73,11 +73,11 @@
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox1.Location = new System.Drawing.Point(548, 128);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Location = new System.Drawing.Point(549, 128);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox1.Size = new System.Drawing.Size(154, 48);
+            this.checkBox1.Size = new System.Drawing.Size(153, 48);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Vyplnit";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             // 
             this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.okButton.Location = new System.Drawing.Point(559, 332);
-            this.okButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.okButton.Margin = new System.Windows.Forms.Padding(2);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(141, 78);
             this.okButton.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.Controls.Add(this.colorButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CommandForm";
             this.Text = "CommandForm";
             this.ResumeLayout(false);

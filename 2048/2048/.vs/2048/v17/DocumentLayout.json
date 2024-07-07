@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\favicon (3).ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:favicon (3).ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\GameOver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameOver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +35,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "favicon (3).ico - Icon [16x16, 32 bit\u016F, BMP]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\favicon (3).ico",
+              "RelativeDocumentMoniker": "favicon (3).ico",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\favicon (3).ico - Icon [16x16, 32 bit\u016F, BMP]",
+              "RelativeToolTip": "favicon (3).ico - Icon [16x16, 32 bit\u016F, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2024-07-07T14:21:48.522Z",
+              "EditorCaption": " - Icon [16x16, 32 bit\u016F, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:21:46.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameOver.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\GameOver.cs",
+              "RelativeDocumentMoniker": "GameOver.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\GameOver.cs",
+              "RelativeToolTip": "GameOver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:21:26.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Cell.cs",
+              "RelativeDocumentMoniker": "Cell.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Cell.cs",
+              "RelativeToolTip": "Cell.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:21:13.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\SPSUL\\2048\\2048\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-07T14:19:07.929Z",
               "EditorCaption": ""
