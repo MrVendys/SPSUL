@@ -10,6 +10,8 @@ Projekt musí být zrealizován v **C# .NET** nebo **HTML + PHP**
 
 V tomto projektu jsem využil **C# .NET**
 
+> **⚠️ Upozornění: Tento projekt není ve spustitelném tvaru. Je plně závislý na souběžný chod s databází.**
+
 ## 🎮 Funkce
 
 - Vytvoření, ukázání, upravení, smazání záznamu.
