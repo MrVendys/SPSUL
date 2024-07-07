@@ -32,5 +32,5 @@ V tomto projektu jsem využil **C# .NET**
 
 ## 📸 Ukázka aplikace
 
-![Screenshot Kreslení Kruhů](PulRocnikovka_screenshot.png)
+![Screenshot Pulrocnikovky](PulRocnikovka_screenshot.png)
 
