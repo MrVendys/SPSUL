@@ -28,7 +28,7 @@ Všechny v jazyce **C#**
 7. **Tekken-master**
    - [Přejít na projekt](./Tekken-master)
 
-8. **Kostky (mobilní aplikace)**
+8. **Ročníkovka**
    - [Přejít na projekt](./Dice)
 
 ## 🎯 Cíle projektů
