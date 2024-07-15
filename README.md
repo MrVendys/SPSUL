@@ -28,6 +28,9 @@ Všechny v jazyce **C#**
 7. **Tekken-master**
    - [Přejít na projekt](./Tekken-master)
 
+8. **Kostky (mobilní aplikace)**
+   - [Přejít na projekt](./Dice)
+
 ## 🎯 Cíle projektů
 
 - Naučit se základy programování v jazyce C#.
