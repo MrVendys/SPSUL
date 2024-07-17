@@ -37,3 +37,8 @@ Všechny v jazyce **C#**
 - Práce s grafickými rozhraními v Windows Forms.
 - Zlepšení dovedností v řešení problémů a algoritmickém myšlení.
 - Získání zkušeností s vývojem a laděním softwaru.
+
+## 🛠️ Stáhnutí projektu
+- Jednotlivé projekty mají své .exe soubory. Stačí stánout jen to.
+- Pro stažení celého řešení (pro kód), zelené tlačítko "Code" -> "Download ZIP"
+  ![Screenshot download](github_download.png)
