@@ -15,7 +15,7 @@ Tento projekt slouží pro vykreslování různých tvarů na canvas zapomocí v
 
 - Windows Forms
 - User control
-- Dědění
+- Polymorfismus
 - Vykreslovani (e.Graphics)
 
 ## 🎮 Ovládání
