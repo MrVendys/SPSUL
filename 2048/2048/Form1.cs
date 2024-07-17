@@ -12,26 +12,31 @@ namespace _2048
 {
     public partial class Form1 : Form
     {
+        //Připravení proměných
         Cell[,] cells = new Cell[4, 4];
         Random r = new Random();
         int cellsCount = 0;
+        int cellValue = 2;
         int score;
         public Form1()
         {
             InitializeComponent();
             GameStart();
         }
+        //Start hry
         public void GameStart()
         {
             panel1.Controls.Clear();
             CreateCells();
         }
+        //Aktualizování score
         public void AddScore(int val, Cell c)
         {
             score += val;
             labelScore.Text = score.ToString();
 
         }
+        //Vytvoreni hracich desticek na plochu 4x4
         public void CreateCells()
         {
             for (int i = 0; i < 4; i++)
@@ -68,13 +73,15 @@ namespace _2048
         {
             int x = r.Next(0, 4);
             int y = r.Next(0, 4);
+            //Projizdim pole hracich desticek dokud nenajdu nejakou prazdnou (nebo pokud uz neni plne pole)
             while (cells[x,y].value != 0 && cellsCount != 16)
             {
-                
+                //Pokud najdu nejakou, ulozim si jeji souradnice
                 x = r.Next(0, 4);
                 y = r.Next(0, 4);   
             }
-
+            //Kontrola, ze mam misto na pridani desticky
+            //Pokud ano, pridam ji na hraci pole s hodnotou bud 2 nebo 4
             if(cellsCount != 16)
             {
                 cellsCount++;
@@ -82,6 +89,8 @@ namespace _2048
                 cells[x, y].setValue(pr);
                 ResetCells();
             }
+            //Pokud ne, Konec Hry
+            //Otevreni noveho okna s napisem "Konec hry" a tlacitekm na restartovani
             else
             {
                 GameOver go = new GameOver();
@@ -112,12 +121,16 @@ namespace _2048
             }
 
         }
+        //Funkce resici pohyb desticek
         public void moveCells(string direct)
         {
+            //Podle promenne "direct" urcit, jakym smerem se maji vsechny desticky pohnout
             switch (direct)
             {
                 case "down":
-                    for (int i = 3; i >= 0; i--)
+                    //I kdyz smer je dolu, prochazim pole po ose y (int i) odspodu, aby se spravne spojovali desticky se stejnym cislem
+                    //Zacinam predposledni destickou (int i = 2), protoze posledni je u zdi a nema se kam posunout
+                    for (int i = 2; i >= 0; i--)
                     {
                         for (int y = 0; y < 4; y++)
                         {
@@ -126,7 +139,7 @@ namespace _2048
                     }
                     break;
                 case "up":
-                    for (int i = 0; i < 4; i++)
+                    for (int i = 1; i < 4; i++)
                     {
                         for (int y = 0; y < 4; y++)
                         {
@@ -137,7 +150,7 @@ namespace _2048
                 case "left":
                     for (int i = 0; i < 4; i++)
                     {
-                        for (int y = 0; y < 4; y++)
+                        for (int y = 1; y < 4; y++)
                         {
                             shiftCellsHor(i, y, direct);
                         }
@@ -146,7 +159,7 @@ namespace _2048
                 case "right":
                     for (int i = 0; i < 4; i++)
                     {
-                        for (int y = 3; y >= 0; y--)
+                        for (int y = 2; y >= 0; y--)
                         {
                             shiftCellsHor(i, y, direct);
                         }
@@ -158,23 +171,6 @@ namespace _2048
         public void shiftCellsVer(int i, int y, string direct)
         {
             Cell nextCell = null;
-            int zed;
-            int a;
-            if(direct == "down")
-            {
-                zed = 3;
-                a = 0;
-            }
-            else
-            {
-                zed = 0;
-                a = 3;
-            }
-
-            if (i == zed || cells[i,y].value == a)
-            {
-                return;
-            }
             if (direct == "down")
             {
                 nextCell = cells[i + 1, y];
@@ -198,14 +194,14 @@ namespace _2048
                 int temp = cells[i, y].value;
                 cells[i, y].setValue(nextCell.value);
                 nextCell.setValue(temp);
-                if(direct == "down")
+                /*if(direct == "down")
                 {
                     shiftCellsVer(i + 1, y, direct);
                 }
                 else
                 {
                     shiftCellsVer(i - 1, y, direct);
-                }
+                }*/
             }
 
         }
@@ -264,27 +260,28 @@ namespace _2048
 
             }
         }
-
+        //Volani funkce po kliknuti na klavesnici
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            //Kontrola, jestli hrac stlacil klavesu na pohyb a pripadne zavolat funkci "moveCells()"
             switch(e.KeyCode)
             {
-                case Keys.W:
+                case Keys.W or Keys.Up:
                     moveCells("up");
                     ResetCells();
                     AddCell();
                     break;
-                case Keys.S:
+                case Keys.S or Keys.Down:
                     moveCells("down");
                     ResetCells();
                     AddCell();
                     break;
-                case Keys.D:
+                case Keys.D or Keys.Right:
                     moveCells("right");
                     ResetCells();
                     AddCell();
                     break;
-                case Keys.A:
+                case Keys.A or Keys.Left:
                     moveCells("left");
                     ResetCells();
                     AddCell();
@@ -292,15 +289,9 @@ namespace _2048
             }
 
         }
-
+        //Kliknuti na tlacitko Reset
         private void resetBtn_Click(object sender, EventArgs e)
         {
-            //foreach(Cell c in cells)
-            //{
-            //    c.setValue(0);
-            //}
-            //AddCell
-            //ResetCells();
             CreateCells();
 
         }
