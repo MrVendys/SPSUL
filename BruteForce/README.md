@@ -26,16 +26,24 @@ Tento projekt je jednoduchým nástrojem na **brute-force** útoky pro prolomen�
 - Tlačítko "Hackni bruteforce" započne prolomování hesla
 - Texty dole se naplní informacemi po zvolení hesla a kliknutí na "Hackni bruteforce" tlačítko
 
-## 🔧 Požadavky
-
-- .NET Framework 4.7.2 nebo vyšší
-- Visual Studio 2019 nebo novější
-
 ## 📂 Struktura projektu
 
 - **WindowsFormsApp1.sln**: Hlavní řešení projektu.
 - **Program.cs**: Hlavní vstupní bod aplikace.
 - **Form1.cs**: Implementace logiky brute-force útoku a grafické rozhraní aplikace pomocí Windows Forms.
+
+## 🔧 Požadavky
+
+- .NET Framework 4.7.2 nebo vyšší
+- Visual Studio 2019 nebo novější
+
+## 🛠️ Instalace
+### .exe souboru
+- V této složce soubor BruteForce.exe
+- Kliknout na něj
+- Vpravo nahoře tlačítko "Download raw file"
+### Celé řešení
+- Vrátit se na https://github.com/MrVendys/SPSUL
 
 ## 📸 Ukázka
 
