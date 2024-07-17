@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\druhanejviceezprace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|solutionrelative:druhanejviceezprace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|c:\\users\\venca\\projects\\spsul\\pokryt\u00ED\\druhanejviceezprace\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|solutionrelative:druhanejviceezprace\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|c:\\users\\venca\\projects\\spsul\\pokryt\u00ED\\druhanejviceezprace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|solutionrelative:druhanejviceezprace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|c:\\users\\venca\\projects\\spsul\\pokryt\u00ED\\druhanejviceezprace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|solutionrelative:druhanejviceezprace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|c:\\users\\venca\\projects\\spsul\\pokryt\u00ED\\druhanejviceezprace\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{535908D4-8E91-4426-8039-02CDCBAC16B5}|DruhaNejviceEzPrace\\DruhaNejviceEzPrace.csproj|solutionrelative:druhanejviceezprace\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "DruhaNejviceEzPrace\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Form1.Designer.cs",
+              "RelativeToolTip": "DruhaNejviceEzPrace\\Form1.Designer.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAADwv1YAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T16:23:34.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Form1.cs",
+              "RelativeDocumentMoniker": "DruhaNejviceEzPrace\\Form1.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Form1.cs",
+              "RelativeToolTip": "DruhaNejviceEzPrace\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T16:17:41.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Circle.cs",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Circle.cs",
               "RelativeDocumentMoniker": "DruhaNejviceEzPrace\\Circle.cs",
               "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Circle.cs",
               "RelativeToolTip": "DruhaNejviceEzPrace\\Circle.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-07T14:53:57.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [N\u00E1vrh]",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Pokryt\u00ED\\DruhaNejviceEzPrace\\Form1.cs",
               "RelativeDocumentMoniker": "DruhaNejviceEzPrace\\Form1.cs",

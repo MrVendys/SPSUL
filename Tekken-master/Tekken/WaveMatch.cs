@@ -34,7 +34,7 @@ namespace Tekken
         {
             countdownTimer.Start();
         }
-
+        //Generovani nahodne frekvence
         private void GenerateSinus()
         {
             Random r = new Random();
@@ -78,7 +78,7 @@ namespace Tekken
                 EndGame();
             }
         }
-
+        //Vypocet souradnice y pro vykreslovani 
         private int GetY(double x, double amp, double freq)
         {
             return (int)(amp * Math.Sin(freq * x));
@@ -95,7 +95,7 @@ namespace Tekken
             DrawSin(e.Graphics, currentAmp, currentFreq, targetPen);
             DrawSin(e.Graphics, amp, freq, myPen);
         }
-
+        //Vykresleni frekvence
         private void DrawSin(Graphics g, double amp, double freq, Pen p)
         {
             int max = panel1.Width - 50;
@@ -109,7 +109,7 @@ namespace Tekken
                 p1 = p2;
             }
         }
-        
+        //Prevadeni stupnu na radiany
         public double ConvertToRadians(double angle)
         {
             return (Math.PI / 180) * angle;
@@ -118,7 +118,7 @@ namespace Tekken
         private void CheckMatch()
         {
 
-            Console.WriteLine("Target: " + freqScroll.Value);
+            //Kontrola, jeslti freknvece zaokrouhlene sedi predepsane frekvenci
             if (Math.Abs(ampScroll.Value - currentAmp) < 3 && Math.Abs(freqScroll.Value - currentFreq) < 3)
             {
                 points++;

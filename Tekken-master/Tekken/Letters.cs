@@ -30,7 +30,7 @@ namespace Tekken
             countdownTimer.Start();
             GenerateLetter();
         }
-
+        //Kontrola, jestli hrac zmacknul spravnou klavesu podle ukazatele
         private void Letters_KeyDown(object sender, KeyEventArgs e)
         {
             string letter = ((char)e.KeyValue).ToString();
@@ -58,14 +58,14 @@ namespace Tekken
                 GameEnded(points);
             this.Close();
         }
-
+        //Vygemerpvamo nahoneho pismene
         private void GenerateLetter()
         {
             Random r = new Random();
             currentLetter = ((char)r.Next(65,91)).ToString();
             letterLbl.Text = currentLetter;
         }
-
+        //Timer
         private void countdownTimer_Tick(object sender, EventArgs e)
         {
             countdownValue--;

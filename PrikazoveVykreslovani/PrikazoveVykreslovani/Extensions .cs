@@ -9,6 +9,7 @@ namespace PrikazoveVykreslovani
 {
     public static class Extensions
     {
+        //Pomocna trida na vypocet vzdalenosti 2 bodu
         public static double Distance(this Point p, Point p2)
         {
             int odv1 = p.X - p2.X;

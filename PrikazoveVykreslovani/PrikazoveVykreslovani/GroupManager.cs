@@ -14,7 +14,9 @@ namespace PrikazoveVykreslovani
     
     public partial class GroupManager : Form
     {
+        //List vsech nakreslenych obrazcu, aby se s nimi nemuselo pracovat pres "Command" 
         List<Shape> shapes = new List<Shape>();
+        //List nakreslenych obrazcu v podobe User Control "Command"
         List<Command> commands = new List<Command>();
         Command currentlyDraggedCommand;
 
@@ -24,14 +26,16 @@ namespace PrikazoveVykreslovani
             InitializeComponent();
             UpdateCommands();
         }
-
+        
+        //Vytvoreni Windows Forms "Command Form" pro kresleni obrazce
         private void AddButton_Click(object sender, EventArgs e) {
             CommandForm cmd = new CommandForm();
+            //Poslani i ostatnich obrazcu na zobrazeni, protoze uzivatel kresli "na jeden papir"
             cmd.SetOtherShapes(shapes);
             cmd.FormClosing += OnCommandClosing;
             cmd.ShowDialog();
         }
-
+        //Funkce na zachytavani zavreni "Command Form" a ulozeni nakresleneho obrazce
         private void OnCommandClosing(object sender, FormClosingEventArgs e) {
             var shp = ((CommandForm) sender).Shape;
             if (shp != null) {
@@ -41,7 +45,7 @@ namespace PrikazoveVykreslovani
 
             UpdateCommands();
         }
-
+        //Pridani noveho User Controll "Command" do panelu napravo tohoto okna
         private void UpdateCommands() {
             panel2.Controls.Clear();
             commands.Clear();
@@ -59,7 +63,7 @@ namespace PrikazoveVykreslovani
             }
             panel2.Refresh();
         }
-
+        //Drag & Drop jednotlivych Commandu
         private void OnMovedDragged(Command obj) {
             if(currentlyDraggedCommand != null)
                 RepositionCommands();
@@ -71,7 +75,6 @@ namespace PrikazoveVykreslovani
                 if(commands[i] != currentlyDraggedCommand)
                     commands[i].Location = new Point(0,i*commands[i].Height);
             }
-            //commands.ForEach(x => Console.WriteLine(x.Location));
             
         }
 
@@ -85,7 +88,7 @@ namespace PrikazoveVykreslovani
         private void OnDragStart(Command obj) {
             currentlyDraggedCommand = obj;
         }
-
+        //Presunuti Commandu pravym tlacitekm musto Drag & Drop
         private void OnPosunNiz(Command c) {
             int index = shapes.IndexOf(c.Shape);
             if (index - 1 >=  0) {
@@ -98,7 +101,6 @@ namespace PrikazoveVykreslovani
         }
 
         private void OnPosunVys(Command c) {
-            // TODO: Opravit!
             int index = shapes.IndexOf(c.Shape);
 
             if (index + 1 < shapes.Count) {
@@ -108,17 +110,17 @@ namespace PrikazoveVykreslovani
             UpdateCommands();
             panel1.Refresh();
         }
-
+        //Smazani Commandu po kliknuti a vybrani pravym tlacitkem
         private void OnSmazat(Command c) {
             shapes.Remove(c.Shape);
             UpdateCommands();
             panel1.Refresh();
         }
-
+        //Vykreslovani vsech obrazcu
         private void Panel1_Paint(object sender, PaintEventArgs e) {
             shapes.ForEach(shp => shp.Draw(e.Graphics));
         }
-
+        //Zavreni tohoto okna s osetrenim chyb
         private void okButton_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
@@ -135,12 +137,11 @@ namespace PrikazoveVykreslovani
                             Close();
                         }
                     } else {
-                        Close();
                     }   
                 }
                 else
                 {
-                    Close();
+                    
                 }
 
             } else {

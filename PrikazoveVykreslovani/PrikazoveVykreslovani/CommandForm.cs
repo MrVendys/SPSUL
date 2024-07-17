@@ -13,6 +13,7 @@ namespace PrikazoveVykreslovani
 
     public partial class CommandForm : Form
     {
+        //Barva obrazce, List ostatnich obrazcu (Ktere jsou na tom "samem papire")
         private Color color;
         List<Shape> otherShapes = new List<Shape>();
         Shape shape;
@@ -30,11 +31,11 @@ namespace PrikazoveVykreslovani
             otherShapes = shapes;
             panel1.Refresh();
         }
-
+        //Automaticke nastaveni moznosti jmena obrazce z preddefinovanych obrazcu
         private void InitializeComboBox() {
             comboBox1.Items.AddRange(Enum.GetNames(typeof(ShapeType)));
         }
-
+        //Vybírani barev
         private void ColorButton_Click(object sender, EventArgs e) {
             var res = colorDialog1.ShowDialog();
             if(res == DialogResult.OK) {
@@ -42,7 +43,7 @@ namespace PrikazoveVykreslovani
                 colorButton.BackColor = color;
             }
         }
-
+        //Vylreslovani osatnich i noveho obrazce
         private void Panel1_Paint(object sender, PaintEventArgs e) {
             foreach(var shp in otherShapes) {
                 shp.Visualize(e.Graphics);
@@ -52,7 +53,7 @@ namespace PrikazoveVykreslovani
                 shape.Draw(e.Graphics);
             }
         }
-
+        //Kresleni noveho obrazce
         private void Panel1_MouseDown(object sender, MouseEventArgs e) {
             isMouseDown = true;
             shape = Shape.CreateShape(comboBox1.Text);
@@ -73,7 +74,7 @@ namespace PrikazoveVykreslovani
         private void Panel1_MouseUp(object sender, MouseEventArgs e) {
             isMouseDown = false;
         }
-
+        //Reseni checkboxu na vyplneni obrazce
         private void CheckBox1_CheckedChanged(object sender, EventArgs e) {
             if(shape != null) {
                 shape.filled = checkBox1.Checked;
@@ -87,7 +88,7 @@ namespace PrikazoveVykreslovani
                 panel1.Refresh();
             } 
         }
-
+        //Reseni vlastniho pojmenovani obrazce
         private void ComboBox1_TextChanged(object sender, EventArgs e) {
             if(shape != null) {
                 shape = Shape.CreateShape(comboBox1.Text, shape);

@@ -12,12 +12,14 @@ namespace PrikazoveVykreslovani
 {
     public partial class GroupView : UserControl
     {
+        //Prommena skupony a event pro kliknuti na ni
         public Group group;
         public event Action<Group> groupClicked;
         public GroupView()
         {
             InitializeComponent();
         }
+        //Vykresleni skupiny obrazcu do pictureBoxu (Ikony skupiny)
         public void setGroup(Group g)
         {
             this.group = g;

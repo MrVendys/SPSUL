@@ -44,6 +44,7 @@ namespace Tekken
             check();
 
         }
+        //Kontrola, jestli micek tefil hracovu palku a vypocet odrazu
         private void check()
         {
             if (ball.Bottom >= racket.Top && ball.Bottom <= racket.Bottom && ball.Left >= racket.Left && ball.Right <= racket.Right)

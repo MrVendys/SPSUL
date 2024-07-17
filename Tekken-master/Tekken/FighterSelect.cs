@@ -12,6 +12,7 @@ namespace Tekken
 {
     public partial class FighterSelect : Form
     {
+        //Tridy "Bojovnik" a List jednotlivych "Bojovniku"
         Fighter fighter = null;
         Fighter opponent = null;
         List<Fighter> fighters = new List<Fighter>()
@@ -47,11 +48,7 @@ namespace Tekken
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        //Nacteni vsech "Fighteru" pri nacteni okna
         private void FighterSelect_Load(object sender, EventArgs e)
         {
             
@@ -67,25 +64,21 @@ namespace Tekken
                 flowLayoutPanel1.Controls.Add(pb);
             }
         }
-
+        //Reseni pri vybrani Fightera a ulozeni do pictureboxu
         private void FighterClick(object sender, EventArgs e)
         {
-           /* if(opponent != null)
-            {
-                return;
-            }
-            */
             button1.Enabled = true;
             FighterModel fm = (FighterModel)sender;
             pictureBox1.BackgroundImage = fm.BackgroundImage;
             Fighter f = fm.Fighter;
             this.fighter = f;
-            label1.Text = f.Name; //286
+            label1.Text = f.Name; 
             pictureBox3.Width = (int)(f.Health / 500.0 * 286);
             pictureBox5.Width = (int)(f.Damage / 101.0 * 286);
             label3.Text = f.OtherData;
         }
-
+        //Reseni pri vybrani Fightera a klikunti na tlacitko "OK"
+        //Pc si nahodne vybere sveho Fightera
         private void button1_Click(object sender, EventArgs e)
         {
             Random r = new Random();
@@ -101,7 +94,7 @@ namespace Tekken
             }
             button1.Enabled = false;
             pictureBox2.BackgroundImage = Image.FromFile(opponent.ImgPath);
-            label2.Text = opponent.Name; //286
+            label2.Text = opponent.Name;
             healthBatPosition = pictureBox4.Location;
             healthBatPosition.X += pictureBox4.Width;
             pictureBox6.Width = (int)(opponent.Damage / 101.0 * 286);
@@ -124,7 +117,7 @@ namespace Tekken
                 pictureBox6.Location.Y
                 );
         }
-
+        //Start Timeru a otevreni okna "Game"
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();

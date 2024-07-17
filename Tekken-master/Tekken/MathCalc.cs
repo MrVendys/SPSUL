@@ -38,7 +38,7 @@ namespace Tekken
                 GameEnded(points);
             this.Close();
         }
-
+        //Generovani nahodneho prikladu
         private void GenerateNumber()
         {
             Random r = new Random();
@@ -85,6 +85,7 @@ namespace Tekken
             fillButtons();
   
         }
+        //Vyplneni textu tlacitek moznostma
         private void fillButtons()
         {
             Random r = new Random();
@@ -156,7 +157,7 @@ namespace Tekken
             gameTimer.Stop();
             countdownTimer.Stop();
         }
-
+        //Kontrolovani vysledku
         private void button1_Click(object sender, EventArgs e)
         {
            

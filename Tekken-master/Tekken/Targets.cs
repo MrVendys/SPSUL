@@ -39,7 +39,7 @@ namespace Tekken
         {
             countdown.Start();
         }
-
+        //Generovani terce na nahodne pozici
         private void GenerateRectangle()
         {
             Random r = new Random();
@@ -85,7 +85,7 @@ namespace Tekken
                 GameEnded(points);
             this.Close();
         }
-
+        //Kontrola, ze hrac kliknul na terc
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             Point a1 = e.Location;
@@ -108,7 +108,7 @@ namespace Tekken
                 }
             }
         }
-
+        //Vykreslovani terce
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Rectangle drawRect = currentTarget;

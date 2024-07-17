@@ -1,30 +1,90 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\",
+  "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\wavematch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\iminigame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:iminigame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\wavematch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:wavematch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\wavematch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:wavematch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\fighters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:fighters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\fighterselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\pong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:pong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\pong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:pong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\letters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:letters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\letters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:letters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\mathcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:mathcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\mathcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:mathcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\fighterselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:fighterselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\fighterselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:fighterselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|c:\\users\\venca\\projects\\spsul\\tekken-master\\tekken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25C72D15-CE7C-4520-9543-5C7C3451EC02}|Tekken.csproj|solutionrelative:fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,28 +94,179 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Circle.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Circle.cs",
+              "RelativeDocumentMoniker": "Circle.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Circle.cs",
+              "RelativeToolTip": "Circle.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAkwHgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:26:01.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WaveMatch.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WaveMatch.cs",
+              "RelativeDocumentMoniker": "WaveMatch.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WaveMatch.cs",
+              "RelativeToolTip": "WaveMatch.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAYwFAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:21:59.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Targets.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Targets.cs",
+              "RelativeDocumentMoniker": "Targets.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Targets.cs",
+              "RelativeToolTip": "Targets.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAwG4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:21:15.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Targets.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Targets.cs",
+              "RelativeDocumentMoniker": "Targets.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Targets.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Targets.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:21:13.86Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pong.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Pong.cs",
+              "RelativeDocumentMoniker": "Pong.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Pong.cs",
+              "RelativeToolTip": "Pong.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAmwC4AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:20:33.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pong.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Pong.cs",
+              "RelativeDocumentMoniker": "Pong.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Pong.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Pong.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:20:30.412Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Letters.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Letters.cs",
+              "RelativeDocumentMoniker": "Letters.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Letters.cs",
+              "RelativeToolTip": "Letters.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAlwEMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T18:08:41.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMinigame.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\IMinigame.cs",
+              "RelativeDocumentMoniker": "IMinigame.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\IMinigame.cs",
+              "RelativeToolTip": "IMinigame.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T18:08:26.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Game.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Game.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:57:58.008Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Game.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Game.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwEIAAAAlAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAswBsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-07T16:00:52.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
+              "Title": "WinnerForm.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WinnerForm.cs",
+              "RelativeDocumentMoniker": "WinnerForm.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WinnerForm.cs [N\u00E1vrh]",
+              "RelativeToolTip": "WinnerForm.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:24:27.466Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WinnerForm.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WinnerForm.cs",
+              "RelativeDocumentMoniker": "WinnerForm.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WinnerForm.cs",
+              "RelativeToolTip": "WinnerForm.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:24:29.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Circle.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Circle.cs",
+              "RelativeDocumentMoniker": "Circle.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Circle.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Circle.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:26:00.274Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "WaveMatch.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\WaveMatch.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WaveMatch.cs",
               "RelativeDocumentMoniker": "WaveMatch.cs",
-              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\WaveMatch.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\WaveMatch.cs [N\u00E1vrh]",
               "RelativeToolTip": "WaveMatch.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-07T15:59:13.178Z",
@@ -63,52 +274,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Fighters.cs",
-              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Fighters.cs",
-              "RelativeDocumentMoniker": "Fighters.cs",
-              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Fighters.cs",
-              "RelativeToolTip": "Fighters.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "Letters.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Letters.cs",
+              "RelativeDocumentMoniker": "Letters.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Letters.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Letters.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T15:59:08.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Fighter.cs",
-              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Fighter.cs",
-              "RelativeDocumentMoniker": "Fighter.cs",
-              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Fighter.cs",
-              "RelativeToolTip": "Fighter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T15:59:06.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FighterSelect.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\FighterSelect.cs",
-              "RelativeDocumentMoniker": "FighterSelect.cs",
-              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\FighterSelect.cs [N\u00E1vrh]",
-              "RelativeToolTip": "FighterSelect.cs [N\u00E1vrh]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T15:58:25.537Z",
+              "WhenOpened": "2024-07-17T18:08:39.668Z",
               "EditorCaption": " [N\u00E1vrh]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Game.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Game.cs [N\u00E1vrh]",
-              "RelativeToolTip": "Game.cs [N\u00E1vrh]",
+              "DocumentIndex": 15,
+              "Title": "MathCalc.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\MathCalc.cs",
+              "RelativeDocumentMoniker": "MathCalc.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\MathCalc.cs",
+              "RelativeToolTip": "MathCalc.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAmwJ8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T15:57:58.008Z",
+              "WhenOpened": "2024-07-17T19:18:17.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MathCalc.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\MathCalc.cs",
+              "RelativeDocumentMoniker": "MathCalc.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\MathCalc.cs [N\u00E1vrh]",
+              "RelativeToolTip": "MathCalc.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:18:06.199Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FighterSelect.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\FighterSelect.cs",
+              "RelativeDocumentMoniker": "FighterSelect.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\FighterSelect.cs",
+              "RelativeToolTip": "FighterSelect.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowHcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T18:05:25.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T18:05:21.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Fighter.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Fighter.cs",
+              "RelativeDocumentMoniker": "Fighter.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\Fighter.cs",
+              "RelativeToolTip": "Fighter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:59:06.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FighterSelect.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\FighterSelect.cs",
+              "RelativeDocumentMoniker": "FighterSelect.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\Tekken-master\\Tekken\\FighterSelect.cs [N\u00E1vrh]",
+              "RelativeToolTip": "FighterSelect.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:58:25.537Z",
               "EditorCaption": " [N\u00E1vrh]"
             }
           ]

@@ -14,6 +14,7 @@ namespace PrikazoveVykreslovani
 {
     public partial class Form1 : Form
     {
+        //List skupin obrazcu a list skupin obrazcu, ktery je uz nakresleny
         List<Group> groups = new List<Group>();
         List<Group> drawGroups = new List<Group>();
         Group selectedGroup = null;
@@ -21,16 +22,18 @@ namespace PrikazoveVykreslovani
         public Form1() {
             InitializeComponent();
         }
-
+        //Sprava kliknuti na "Skupina -> Přidat"
         private void přidatToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Otevře nové windows form okno "GroupManager"
             GroupManager gm = new GroupManager();
             gm.FormClosing += GroupManagerClosing;
             gm.ShowDialog();
         }
-
+        //Reseni pri zavirani GroupManager okna
         private void GroupManagerClosing(object sender, FormClosingEventArgs e)
         {
+            //Ulozeni jmena a obrazcu, ktere uzivatel nakreslil v GroupManager
             var name = ((GroupManager)sender).GroupName;
             var shapes = ((GroupManager)sender).Shapes;
 
@@ -45,6 +48,7 @@ namespace PrikazoveVykreslovani
                 UpdateGroups();
             }
         }
+        //Vyobrazeni skupin obrazcu vpravo v hlavnim okne Form1
         public void UpdateGroups()
         {
             foreach(Group g in groups)
@@ -56,7 +60,7 @@ namespace PrikazoveVykreslovani
             }
             canvas1.Refresh();
         }
-
+        //Reseni kliknuti na skupinu za ucelem ji vykreslit
         private void GroupClicked(Group obj)
         {
             Group g = new Group(obj);
@@ -69,21 +73,12 @@ namespace PrikazoveVykreslovani
             
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
+        //Vykreslovani obrazcu ve skupine
         private void canvas1_Paint(object sender, PaintEventArgs e)
         {
             drawGroups.ForEach(x => x.DrawGroup(e.Graphics));
         }
-
+        //Reseni, zda bylo kliknuto na vykreslenou skupinu a pridani operace
         private void canvas1_MouseDown(object sender, MouseEventArgs e)
         {
             if(selectedGroup != null)
@@ -91,16 +86,21 @@ namespace PrikazoveVykreslovani
                 operation = selectedGroup.GetOperation(e.Location);   
             }
         }
-
+        //Reseni konce operace
         private void canvas1_MouseUp(object sender, MouseEventArgs e)
         {
             operation = Operation.None;
         }
-
+        private void canvas1_MouseLeave(object sender, EventArgs e)
+        {
+            operation = Operation.None;
+        }
+        //Reseni operaci na skupine obrazcu
         private void canvas1_MouseMove(object sender, MouseEventArgs e)
         {
             Group tempSelected = null;
 
+            //Projeti vsech vykreslenych skupin, na jakou uzivatel kliknul
             foreach(Group g in drawGroups)
             {
                 if (g.ContainsPoint(e.Location))
@@ -125,8 +125,10 @@ namespace PrikazoveVykreslovani
                 selectedGroup = tempSelected;
                 tempSelected.Selected = true;
             }
+            //Kontrola null hodnot
             if(selectedGroup != null && operation != Operation.None)
             {
+                //Vybrani operace "Replace" nebo "Resize"
                 if(operation == Operation.Replace)
                 {
                     selectedGroup.GroupReplace(e.Location);
@@ -142,32 +144,13 @@ namespace PrikazoveVykreslovani
             canvas1.Refresh();
         }
 
-        private void canvas1_MouseLeave(object sender, EventArgs e)
-        {
-            operation = Operation.None;
-        }
-
+        
+        //Ulozeni canvasu v hlavnim okne Form1 do pocitace v .json formatu
         private void uložitToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            /*
-            Group g = new Group()
-            {
-                name = "TestGroup",
-                position = new Point(50, 50),
-                size = new Size(100,100),
-                shapes = new List<Shape>
-                {
-                    new Rectangle()  {color=Color.Red, end = new Point(15,15), start = new Point(0,0),filled = true },
-                    new Rectangle()  {color=Color.Red, end = new Point(15,15), start = new Point(0,0),filled = true },
-                    new Rectangle()  {color=Color.Red, end = new Point(15,15), start = new Point(0,0),filled = true }
-                    
-                }
-            };*/
-
 
             string vystup = JsonConvert.SerializeObject(groups);
-            Console.WriteLine(vystup);
             SaveFileDialog fd = new SaveFileDialog();
             fd.AddExtension = true;
             fd.DefaultExt = ".json";
@@ -182,11 +165,10 @@ namespace PrikazoveVykreslovani
             }
 
         }
-
+        //Nacteni souboru formatu .json do canvasu
         private void načístToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog od = new OpenFileDialog();
-            //od.Filter = "JSON | .json";
             DialogResult dr = od.ShowDialog();
             if (dr == DialogResult.OK)
             {
@@ -194,7 +176,10 @@ namespace PrikazoveVykreslovani
                 List<Group> nactene = JsonConvert.DeserializeObject<List<Group>>(text);
             }
         }
+
+
     }
+    //Mozne operace se skupinou obrazcu
     public enum Operation
     {
         None,

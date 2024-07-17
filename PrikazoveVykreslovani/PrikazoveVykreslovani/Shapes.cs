@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrikazoveVykreslovani
 {
+    //Vycet moznych skupin
     public enum ShapeType
     {
         Rectangle,
@@ -16,7 +17,7 @@ namespace PrikazoveVykreslovani
         Triangle,
         Hexagon
     }
-
+    //Abstraktni trida "Shape" ze ktery dedi ostatni obrazce
     public class Shape
     {
         protected Pen visualizePen = new Pen(Color.Black, 3) 
@@ -31,6 +32,7 @@ namespace PrikazoveVykreslovani
         public string ClassName;
         public string name { get { return this.GetType().Name; } }
 
+        //Naplneni promenych po vytvoreni podle vyctu
         public static Shape CreateShape(string s, Shape origin) {
             var shape = CreateShape(s);
             shape.color = origin.color;
@@ -40,7 +42,7 @@ namespace PrikazoveVykreslovani
             shape.start = origin.start;
             return shape;
         }
-
+        //Vytvoreni noveho obrazce podle vlastniho pojmenovani
         public static Shape CreateShape(string s) {
             s = CorrectShapeName(s);
             
@@ -58,22 +60,22 @@ namespace PrikazoveVykreslovani
                 return "Rectangle";
             }
         }
-
+        //Virtualni predpis tridy na vykreslovani obrazce
         public virtual void Draw(Graphics g) { }
-
+        //Virtualni predpis tridy pro vykreslovani ve skupine na hlavni okno Form1
         public virtual void DrawInSize(Graphics g, Point pos, Size siz)
         {
 
         }
 
-
+        //Virtualni trida pro vykresleni obrysu obrazce
         public virtual void Visualize(Graphics g) { }
 
         public override string ToString() {
             return GetType().Name + start + " " + end;
         }
     }
-
+    //Trida ctverce
     public class Rectangle : Shape
     {
         public override void Draw(Graphics g) {
@@ -113,7 +115,7 @@ namespace PrikazoveVykreslovani
             }
         }
     }
-
+    //Trida Elipsy
     public class Ellipse : Shape
     {
         public override void Draw(Graphics g) {
@@ -151,7 +153,7 @@ namespace PrikazoveVykreslovani
             }
         }
     }
-
+    //Trida Krize
     public class Cross : Shape
     {
         public override void Draw(Graphics g) {
@@ -164,7 +166,7 @@ namespace PrikazoveVykreslovani
             g.DrawLine(visualizePen, start.X, end.Y, end.X, start.Y);
         }
     }
-
+    //Trida Cary
     public class Line : Shape
     {
         public override void Draw(Graphics g) {
@@ -175,7 +177,7 @@ namespace PrikazoveVykreslovani
             g.DrawLine(visualizePen, start, end);
         }
     }
-
+    //Trida trojuhelniku
     public class Triangle : Shape
     {
         public override void Draw(Graphics g) {
@@ -201,7 +203,7 @@ namespace PrikazoveVykreslovani
             g.DrawPolygon(visualizePen, points);
         }
     }
-
+    //Trida hexagonu
     public class Hexagon : Shape
     {
         public override void Draw(Graphics g) {

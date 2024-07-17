@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DruhaNejviceEzPrace
 {
+    //Trida na promenne a vykreslovani Kruhu
     class Circle
     {
         public Point start;

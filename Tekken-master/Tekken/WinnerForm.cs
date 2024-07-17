@@ -15,6 +15,7 @@ namespace Tekken
         public int result = 0;
         public WinnerForm(Fighter winner)
         {
+            //Vezme obrazek viteze ze souboru a vlozi do pictureboxu
             InitializeComponent();
             pictureBox1.Image = Image.FromFile(winner.ImgPath);
             nameLbl.Text = winner.Name;

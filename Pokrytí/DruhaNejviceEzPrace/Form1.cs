@@ -8,15 +8,13 @@ namespace DruhaNejviceEzPrace
     {
         bool isMouseDown;
         bool background;
-        string blue;
-        string red;
         Point p;
         Circle c;
         public Form1()
         {
             InitializeComponent();
         }
-
+        //Vykreslovani kola
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             panel1.BackColor = Color.White;
@@ -27,7 +25,7 @@ namespace DruhaNejviceEzPrace
             c.end = e.Location;
             panel1.Refresh();
         }
-
+        //Reseni dokresleni kruhu a pocitani pokryti
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             p.X = panel1.Height;
@@ -71,6 +69,7 @@ namespace DruhaNejviceEzPrace
                 panel1.Refresh();
             }
         }
+        //Reseni vykreslovani
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             if (c != null)
@@ -83,8 +82,11 @@ namespace DruhaNejviceEzPrace
                 panel1.BackColor = Color.Red;
             }
         }
+        //Pocitani procent pokryti plochy
         public void Calculate()
         {
+            string blue;
+            string red;
             double circleS = Math.PI * (Math.Pow(c.size,2));
             blue = circleS.ToString("#.000") + " px2";
 
@@ -92,7 +94,6 @@ namespace DruhaNejviceEzPrace
             red = panelS.ToString("#.000") + " px2";
       
             double procCircle = (100.0 / Math.Pow(panel1.Width,2)) * (int)circleS;
-            Console.WriteLine(procCircle);
             double procPanel = 100 - procCircle;
             blue += " (" + procCircle.ToString("#.000") + "%)";
             red += " (" + procPanel.ToString("#.000") + "%)";
@@ -101,14 +102,11 @@ namespace DruhaNejviceEzPrace
 
            
         }
+        //Pocitani vzdalenosti mezi 2 body
         public int GetDistance(Point p)
         {
             return (int)(Math.Sqrt(Math.Pow((c.start.X - p.X), 2) + Math.Pow((c.start.Y - p.Y), 2)));
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

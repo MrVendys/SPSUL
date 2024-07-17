@@ -30,7 +30,6 @@
             this.souborToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.načístToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uložitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skupinbaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.přidatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.canvas1 = new PrikazoveVykreslovani.Canvas();
@@ -59,8 +58,7 @@
             // 
             this.souborToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.načístToolStripMenuItem,
-            this.uložitToolStripMenuItem,
-            this.novýToolStripMenuItem});
+            this.uložitToolStripMenuItem});
             this.souborToolStripMenuItem.Name = "souborToolStripMenuItem";
             this.souborToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.souborToolStripMenuItem.Text = "Soubor";
@@ -79,12 +77,6 @@
             this.uložitToolStripMenuItem.Text = "Uložit";
             this.uložitToolStripMenuItem.Click += new System.EventHandler(this.uložitToolStripMenuItem_Click);
             // 
-            // novýToolStripMenuItem
-            // 
-            this.novýToolStripMenuItem.Name = "novýToolStripMenuItem";
-            this.novýToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.novýToolStripMenuItem.Text = "Nový";
-            // 
             // skupinbaToolStripMenuItem
             // 
             this.skupinbaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -96,7 +88,7 @@
             // přidatToolStripMenuItem
             // 
             this.přidatToolStripMenuItem.Name = "přidatToolStripMenuItem";
-            this.přidatToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.přidatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.přidatToolStripMenuItem.Text = "Přidat";
             this.přidatToolStripMenuItem.Click += new System.EventHandler(this.přidatToolStripMenuItem_Click);
             // 
@@ -125,7 +117,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -139,7 +130,6 @@
         private System.Windows.Forms.ToolStripMenuItem souborToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem načístToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uložitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem novýToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem skupinbaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem přidatToolStripMenuItem;
         private Canvas canvas1;

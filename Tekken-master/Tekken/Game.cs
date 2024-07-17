@@ -12,6 +12,7 @@ namespace Tekken
 {
     public partial class Game : Form
     {
+        //Vlastní konzole na zprávy
         TekkenConsole console;
 
         Fighter fighter = null;
@@ -21,7 +22,7 @@ namespace Tekken
         Fighter opponentModel;
 
         Random r = new Random();
-
+        //Výčet miniher
         List<Type> minigames = new List<Type>()
         {
             typeof(Targets),
@@ -47,7 +48,7 @@ namespace Tekken
             InitializeComponent();
             console = new TekkenConsole(flowLayoutPanel1);
         }
-
+        //Grafické reseni pri zmene životů
         private void OnHpChanged()
         {
             this.fighterpgbr.Value = this.fighter.Health;
@@ -58,7 +59,7 @@ namespace Tekken
 
             CheckVictory();
         }
-
+        //Kontrola konce hry (Jeslti jeden z bojonviku nema 0 zivotu)
         private void CheckVictory()
         {
             Fighter winner = null;
@@ -66,11 +67,13 @@ namespace Tekken
                 winner = opponent;
             if (opponent.Health == 0)
                 winner = fighter;
-
+            //Pokud ano, konec hry.
+            //Objevi se okno konce hry -> WinnerForm 
             if(winner != null)
             {
                 WinnerForm wf = new WinnerForm(winner);
                 wf.ShowDialog();
+                //Nasledne se vybere, zda hrac kliknul na tlacitko s "Rematch" nebo "Fighter Select"
                 if(wf.result == 1 || wf.result == 0)
                 {
                     fighter = (Fighter)fighterModel.Clone();
@@ -97,14 +100,14 @@ namespace Tekken
 
             OnHpChanged();
         }
-
+        //Reseni pri kliknutí na tlačítko "Fight"
         private void fightbtn_Click(object sender, EventArgs e)
         {
             Fighter attacker = r.Next(10) <= 5 ? fighter : opponent;
             Fighter defender = attacker == fighter ? opponent : fighter;
             Fight(attacker,defender);
         }
-
+        //Reseni miniher
         private void Fight(Fighter attacker,Fighter defender)
         {
             if (attacker == fighter)
@@ -112,13 +115,12 @@ namespace Tekken
             else
                 DealRandomDamage(attacker,defender);
         }
-
+        //Pocitani poskozeni pocitace
         private void DealRandomDamage(Fighter attacker, Fighter defender)
         {
-            //Bot calc random damage multiplier
             DealDamage(attacker, defender, r.Next(0, 4));
         }
-        //Add some dodge and crit stat into hit chance and then deal damage
+        //Funkce pro výpočet poškození
         private void DealDamage(Fighter attacker, Fighter defender,int points)
         {
             int dodge = r.Next(101);
@@ -142,7 +144,7 @@ namespace Tekken
                 defender.DealDamage((int)dmg);
             }
         }
-
+        //Vybrani nahodne minihry a spusteni okna
         private void StartMiniGame(Fighter attacker, Fighter defender)
         {
 

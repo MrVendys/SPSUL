@@ -23,6 +23,7 @@ namespace Tekken
         public Circle()
         {
             InitializeComponent();
+            //Nahodna pozice zeleneho pole
             pozice = r.Next(0, 361);
         }
         public event Action<int> GameEnded;
@@ -53,7 +54,7 @@ namespace Tekken
                 label1.Hide();
             }
         }
-
+        //Vykresleni kruhu se zelenou casti
         private void vykresli(Graphics g)
         {
             Pen p1 = new Pen(Color.Black, 20);
@@ -93,7 +94,7 @@ namespace Tekken
          
 
         }
-
+        //Kontrola jestli hrac kliknul na zelene pole
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             if (point.X <= pozice + o)

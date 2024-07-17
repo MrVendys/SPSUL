@@ -9,6 +9,7 @@ namespace PrikazoveVykreslovani
 {
     public class Group
     {
+        //Jmeno skupiny, obrazce v ni, pozice a velikost skupiny
         public string name;
         public List<Shape> shapes;
 
@@ -31,10 +32,12 @@ namespace PrikazoveVykreslovani
             this.position = origin.position;
             this.size = origin.size;
         }
+        //Reseni, jestli jsem kliknul na tuto skupinu
         public bool ContainsPoint(Point p)
         {
             return p.X > position.X - arrowSize && p.X < position.X + size.Width + arrowSize && p.Y > position.Y - arrowSize&& p.Y < position.Y + size.Height + arrowSize;
         }
+        //Vykresleni skupiny
         public void DrawGroup(Graphics g)
         {
             foreach (var shape in shapes)
@@ -48,6 +51,7 @@ namespace PrikazoveVykreslovani
                 
             }
         }
+        //Vykresleni sipek oznacene skupiny (sipky pro zvetseni/zmenseni
         public void DrawArrows(Graphics g)
         {
             g.DrawLine(arrowPen, position.X - arrowSize, position.Y, position.X + arrowSize, position.Y);
@@ -66,6 +70,7 @@ namespace PrikazoveVykreslovani
             size = s;
            
         }
+        //Reseni ktere operace na zakladu pozice mysi
         public Operation GetOperation(Point mouse)
         {
           
