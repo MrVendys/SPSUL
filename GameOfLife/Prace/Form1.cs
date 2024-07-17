@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Prace
 {
     public partial class Form1 : Form
     {
+        //Promenne
+        //pole je to, ktere se vykresluje
+        //pole2 je sekundarni, ktere slouzi pri vypoctu sousedu
         Bunka[,] pole;
         Bunka[,] pole2;
         bool odpocet = false;
@@ -20,9 +16,9 @@ namespace Prace
             InitializeComponent();
             GenerujBunky();
         }
+        //Naplneni poli bunkami
         public void GenerujBunky()
         {
-            int pocet = 0;
             pole = new Bunka[47, 47];
             pole2 = new Bunka[47, 47];
             for (int i = 0; i < 47; i++)
@@ -31,10 +27,10 @@ namespace Prace
                 {
                     pole[i, j] = new Bunka(false, 10);
                     pole2[i, j] = new Bunka(false, 10);
-                    pocet++;
                 }
             }
         }
+        //Vykreslovani bunek na panel podle vlastni funkce ve tride "Bunka.cs"
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             for (int i = 1; i < 47 - 1; i++)
@@ -45,6 +41,7 @@ namespace Prace
                 }
             }
         }
+        //Reseni konfigurace bunek uzivatelem
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             int x = e.X / 10;
@@ -52,8 +49,10 @@ namespace Prace
             pole[x, y].ziva = !pole[x, y].ziva;
             panel1.Refresh();
         }
-        private void button1_Click(object sender, EventArgs e)
+        //Generace bunek na panel
+        private void vygenerujBtn_Click(object sender, EventArgs e)
         {
+            //Resetovani vsech bunek (na mrtve -> bile)
             for (int i = 0; i < 47; i++)
             {
                 for (int j = 0; j < 47; j++)
@@ -61,13 +60,13 @@ namespace Prace
                     pole[i, j].ziva = false;
                 }
             }
+            //Podle inputu spočítání kolik bude zivych bunek
             Random r = new Random();
             double a = (double)Cislo.Value;
-            Console.WriteLine(a.ToString());
-            double b = (a / 100) * ((pole.GetLength(1)-1) * (pole.GetLength(0)-1));
-            Console.WriteLine(b.ToString());
+            double b = (a / 100) * ((pole.GetLength(1) - 1) * (pole.GetLength(0) - 1));
 
-          for (int i = 0; i < b; i++)
+            //Oziveni bunek, pokud se narazi jiz na zivou, zkusi znovu
+            for (int i = 0; i < b; i++)
             {
                 int r1 = r.Next(1, 47);
                 int r2 = r.Next(1, 47);
@@ -83,21 +82,15 @@ namespace Prace
             }
             panel1.Refresh();
         }
-        private void button2_Click(object sender, EventArgs e)
+        //Start hry, zapnuti timeru
+        private void startBtn_Click(object sender, EventArgs e)
         {
             timer1.Start();
             panel1.Refresh();
         }
+        //Kazdy tick timeru (1s) se prepocita, kolik ma bunka soousedu a podle pravidel bud zustane ziva, ozivi se, nebo umre a obnovi se panel
         private void timer1_Tick(object sender, EventArgs e)
         {
-            pole2 = new Bunka[47,47];
-            for (int i = 0; i < 47; i++)
-            {
-                for (int j = 0; j < 47; j++)
-                {
-                    pole2[i, j] = new Bunka(false, 10);
-                }
-            }
             for (int i = 1; i < 46; i++)
             {            
                 for (int j = 1; j < 46; j++)
@@ -131,9 +124,11 @@ namespace Prace
             pole = pole2;
             panel1.Refresh();
         }
+        //Funkce na vypocitani poctu sousedu
         public int GetPocetSousedu(int x, int y)
         {
             int pocet = 0;
+            //Ctverec kolem bunky
             for (int i = -1; i < 2; i++)
             {
                 for (int j = -1; j < 2; j++)
@@ -149,7 +144,23 @@ namespace Prace
             }
             return pocet;
         }
-        private void button3_Click(object sender, EventArgs e) 
+        //Pozastavi timer a bunky prestanou umirat, ozivovat se
+        private void pauseBtn_Click(object sender, EventArgs e)
+        {
+            
+            if (odpocet == false)
+            {
+                timer1.Enabled = false;
+            }
+            else
+            {
+                timer1.Enabled = true;
+            }
+            odpocet = !odpocet;
+        }
+
+        //Nastavi vsechny bunky na mrtve -> Reset hry
+        private void stopBtn_Click(object sender, EventArgs e)
         {
             timer1.Stop();
             for (int i = 1; i < 47 - 1; i++)
@@ -160,19 +171,6 @@ namespace Prace
                 }
             }
             panel1.Refresh();
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (odpocet == false)
-            {
-                timer1.Enabled = false;
-            }
-            else
-            {
-                timer1.Enabled = true;
-            }
-            odpocet = !odpocet;
-            
         }
     }
 }
