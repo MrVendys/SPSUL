@@ -41,4 +41,4 @@ Všechny v jazyce **C#**
 ## 🛠️ Stáhnutí projektu
 - Jednotlivé projekty mají své .exe soubory. Stačí stánout jen to.
 - Pro stažení celého řešení (pro kód), zelené tlačítko "Code" -> "Download ZIP"
-  ![Screenshot download](github_download.png)
+  ![Screenshot download](github_download2.png)
