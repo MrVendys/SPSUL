@@ -43,7 +43,7 @@ Tento projekt je jednoduchým nástrojem na **brute-force** útoky pro prolomen�
 - Kliknout na něj
 - Vpravo nahoře tlačítko "Download raw file"
 ### Celé řešení
-- Vrátit se zpět na ![repozitář SPSUL](https://github.com/MrVendys/SPSUL)
+- Vrátit se zpět na [repozitář SPSUL](../MrVendys/SPSUL)
 
 ## 📸 Ukázka
 
