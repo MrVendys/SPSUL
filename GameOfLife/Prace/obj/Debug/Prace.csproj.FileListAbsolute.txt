@@ -18,3 +18,13 @@ C:\Users\Venca\Desktop\Bordel\SPSUL\repos\Prace\Prace\obj\Debug\Prace.csproj.Gen
 C:\Users\Venca\Desktop\Bordel\SPSUL\repos\Prace\Prace\obj\Debug\Prace.csproj.CoreCompileInputs.cache
 C:\Users\Venca\Desktop\Bordel\SPSUL\repos\Prace\Prace\obj\Debug\Prace.exe
 C:\Users\Venca\Desktop\Bordel\SPSUL\repos\Prace\Prace\obj\Debug\Prace.pdb
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\bin\Debug\Prace.exe.config
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\bin\Debug\Prace.exe
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\bin\Debug\Prace.pdb
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.csproj.AssemblyReference.cache
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.Form1.resources
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.Properties.Resources.resources
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.csproj.GenerateResource.cache
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.csproj.CoreCompileInputs.cache
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.exe
+C:\Users\Venca\Projects\SPSUL\GameOfLife\Prace\obj\Debug\Prace.pdb

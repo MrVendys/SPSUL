@@ -4,7 +4,7 @@
 
 Tento projekt je jednoduchým nástrojem na **brute-force** útoky pro prolomení hesel v jazyce **C#**. **Brute-force** metoda zkouší všechny možné kombinace znaků, dokud nenajde správné heslo. Pouze určen pro výukové účely.
 
-> **⚠️ Upozornění: Tento nástroj je určen pouze pro legální a etické účely, jako výuka programování. Nepoužívejte jej k nelegálním aktivitám.**
+> **⚠️ Upozornění: Tento nástroj je určen pouze pro legální a etické účely, jako je výuka programování. Nepoužívejte jej k nelegálním aktivitám.**
 
 ## ⚙️ Funkce
 
@@ -20,11 +20,11 @@ Tento projekt je jednoduchým nástrojem na **brute-force** útoky pro prolomen�
 - Akce (Action)
 
 ## 🎮 Ovládání
-- Textová pole "Délka hesla" a "Abeceda" lze přepsat
-- Tlačítko "Generovat Heslo" vygeneruje náhodné heslo ze tvolené délky a abecedy znaků
+- Textová pole **Délka hesla** a **Abeceda** lze přepsat
+- Tlačítko **Generovat Heslo** vygeneruje náhodné heslo ze tvolené délky a abecedy znaků
     - znovukliknutí na tlačítko vyresetuje aplikaci
-- Tlačítko "Hackni bruteforce" započne prolomování hesla
-- Texty dole se naplní informacemi po zvolení hesla a kliknutí na "Hackni bruteforce" tlačítko
+- Tlačítko **Hackni bruteforce** započne prolomování hesla
+- Texty dole se naplní informacemi po zvolení hesla a kliknutí na **Hackni bruteforce** tlačítko
 
 ## 📂 Struktura projektu
 
@@ -43,7 +43,7 @@ Tento projekt je jednoduchým nástrojem na **brute-force** útoky pro prolomen�
 - Kliknout na něj
 - Vpravo nahoře tlačítko "Download raw file"
 ### Celé řešení
-- Vrátit se zpět na ![repozitář SPSUL](https://github.com/MrVendys/SPSUL)
+- Vrátit se zpět na [repozitář SPSUL](../)
 
 ## 📸 Ukázka
 
