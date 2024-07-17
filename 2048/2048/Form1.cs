@@ -12,11 +12,10 @@ namespace _2048
 {
     public partial class Form1 : Form
     {
-        //Připravení proměných
+        //Pripraveni promenych
         Cell[,] cells = new Cell[4, 4];
         Random r = new Random();
         int cellsCount = 0;
-        int cellValue = 2;
         int score;
         public Form1()
         {
@@ -30,13 +29,13 @@ namespace _2048
             CreateCells();
         }
         //Aktualizování score
-        public void AddScore(int val, Cell c)
+        public void AddScore(int val)
         {
             score += val;
             labelScore.Text = score.ToString();
 
         }
-        //Vytvoreni hracich desticek na plochu 4x4
+        //Vytvoreni hraci plochy a nahodne 2 desticek s hodnotou
         public void CreateCells()
         {
             for (int i = 0; i < 4; i++)
@@ -61,6 +60,7 @@ namespace _2048
             AddCell();
             AddCell();
         }
+        //Refrech vsech desticek a pridani jedne nove
         public void ResetCells()
         {
             panel1.Controls.Clear();
@@ -68,7 +68,9 @@ namespace _2048
             {
                 panel1.Controls.Add(c);
             }
+            
         }
+        //Funcke na pridani jedne desticky na nahodne koordinaty
         public void AddCell()
         {
             int x = r.Next(0, 4);
@@ -109,18 +111,6 @@ namespace _2048
             
         }
 
-        private void flowLayoutPanel1_MouseClick(object sender, MouseEventArgs e)
-        {
-            int x = r.Next(0, 4);
-            int y = r.Next(0, 4);
-            if (cells[x, y].value == 0)
-            {
-                cells[x, y].setValue(2);
-                Console.WriteLine(x + " " + y + " " + cells[x, y].value);
-                ResetCells();
-            }
-
-        }
         //Funkce resici pohyb desticek
         public void moveCells(string direct)
         {
@@ -166,81 +156,70 @@ namespace _2048
                     }
                     break;
             }
+            AddCell();
 
         }
+        //Pohyb desticky [i,y] vertikalne podle "direct"
         public void shiftCellsVer(int i, int y, string direct)
         {
             Cell nextCell = null;
+            //Kontrola pozice pri rekurzi
             if (direct == "down")
             {
+                if (i == 3)
+                    return;
                 nextCell = cells[i + 1, y];
             }
             else
             {
+                if (i == 0)
+                    return;
                 nextCell = cells[i - 1, y];
             }
 
+            //Pokud nasledujici desticka ma stejnou hodnotu, spoji se a nahradi jeji misto
             if (cells[i, y].value == nextCell.value)
             {
-                nextCell.setValue(nextCell.value * 2);
-                cells[i, y].setValue(0);
-                AddScore(nextCell.value, nextCell);
-                if (nextCell.value != 0)
-                    cellsCount--;
-
+                SwitchValue(cells[i, y], nextCell);
             }
+            //Pokud ma dalsi desticka hodnotu 0, nahradi jeji misto
+            //Nasledne rekurze, pokud i nasledujici desticky maji hodnotu 0
             else if(nextCell.value == 0)
             {
                 int temp = cells[i, y].value;
                 cells[i, y].setValue(nextCell.value);
                 nextCell.setValue(temp);
-                /*if(direct == "down")
+                if(direct == "down")
                 {
                     shiftCellsVer(i + 1, y, direct);
                 }
                 else
                 {
                     shiftCellsVer(i - 1, y, direct);
-                }*/
+                }
             }
 
         }
+        //Pohyb desticky [i,y] horizontalne podle "direct"
         public void shiftCellsHor(int i, int y, string direct)
         {
             Cell nextCell = null;
-            int zed;
-            int a;
             if (direct == "right")
             {
-                zed = 3;
-                a = 0;
-            }
-            else
-            {
-                zed = 0;
-                a = 3;
-            }
-
-            if (y == zed || cells[i, y].value == a)
-            {
-                return;
-            }
-            if (direct == "right")
-            {
+                if (y == 3)
+                    return;
                 nextCell = cells[i, y + 1];
             }
             else
             {
+                if (y == 0)
+                    return;
                 nextCell = cells[i, y - 1];
             }
 
             if (cells[i, y].value == nextCell.value)
             {
-                nextCell.setValue(nextCell.value * 2);
-                cells[i, y].setValue(0);
-                AddScore(nextCell.value,nextCell);
-                if (nextCell.value != 0)
-                    cellsCount--;
+                SwitchValue(cells[i,y], nextCell);
             }
             else if (nextCell.value == 0)
             {
@@ -260,31 +239,36 @@ namespace _2048
 
             }
         }
+        //Funkce na prohazovani hodnoty desticek
+        private void SwitchValue(Cell first, Cell next)
+        {
+            next.setValue(next.value * 2);
+            first.setValue(0);
+            AddScore(next.value);
+            if (next.value != 0)
+                cellsCount--;
+        }
         //Volani funkce po kliknuti na klavesnici
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            //Kontrola, jestli hrac stlacil klavesu na pohyb a pripadne zavolat funkci "moveCells()"
+            //Kontrola, jestli hrac stlacil klavesu na pohyb a pripadne volani funkci "moveCells()"
             switch(e.KeyCode)
             {
-                case Keys.W or Keys.Up:
+                case Keys.W: 
                     moveCells("up");
                     ResetCells();
-                    AddCell();
                     break;
-                case Keys.S or Keys.Down:
+                case Keys.S:
                     moveCells("down");
                     ResetCells();
-                    AddCell();
                     break;
-                case Keys.D or Keys.Right:
+                case Keys.D:
                     moveCells("right");
                     ResetCells();
-                    AddCell();
                     break;
-                case Keys.A or Keys.Left:
+                case Keys.A:
                     moveCells("left");
                     ResetCells();
-                    AddCell();
                     break;
             }
 

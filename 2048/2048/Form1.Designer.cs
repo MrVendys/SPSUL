@@ -44,7 +44,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(620, 550);
             this.panel1.TabIndex = 0;
-            this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseClick);
             // 
             // resetBtn
             // 
@@ -62,7 +61,7 @@
             this.label1.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 78);
+            this.label1.Size = new System.Drawing.Size(220, 78);
             this.label1.TabIndex = 3;
             this.label1.Text = "2048";
             // 
@@ -108,7 +107,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 692);
             this.Controls.Add(this.labelBest);
@@ -118,6 +117,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;

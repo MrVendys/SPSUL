@@ -12,12 +12,14 @@ namespace _2048
 {
     public partial class Cell : UserControl
     {
+        //Promenna pro hodnotu desticky
         public int value { set; get; }
         public Cell()
         {
             InitializeComponent();
 
         }
+        //Funkce na aktualzovani hodnoty promenne,textu a barvy
         public void setValue(int v)
         {
             if(v == 0)
@@ -31,6 +33,7 @@ namespace _2048
             value = v;
             setBackground();
         }
+        //Nastaveni pozadi desticky podle jeji hodnoty
         public void setBackground()
         {
             if (value == 0 )
