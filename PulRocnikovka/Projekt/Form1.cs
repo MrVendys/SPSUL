@@ -35,7 +35,7 @@ namespace Projekt
             lblCount.BackColor = System.Drawing.Color.Transparent;
 
         }
-
+        //Pripojeni na databazi (db)
         private void Connectdb()
         {
             constring = AppSettings.ConnectionString();
@@ -52,6 +52,7 @@ namespace Projekt
                 MessageBox.Show("Error");
             }
         }
+        //Funcke na vypocitani poctu 
         private void Count()
         {
             query = "SELECT COUNT(id) FROM customer";
@@ -66,66 +67,46 @@ namespace Projekt
             lblCount.Text = i.ToString();
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        //Vytvoreni CRUD (Create, Read, Update, Delete) funkci po kliknuti na tlacitka
+        private void createBtn_Click(object sender, EventArgs e)
         {
 
             if((textJmeno != null && !string.IsNullOrWhiteSpace(textJmeno.Text)) && (textPrijmeni != null && !string.IsNullOrWhiteSpace(textPrijmeni.Text)) && (textAdresa != null && !string.IsNullOrWhiteSpace(textAdresa.Text)) && (textCastka != null && !string.IsNullOrWhiteSpace(textCastka.Text)))
             {
+                MySqlCommand cmd2;
+                //Kontrola, jestli textPozn je prazny nebo ne
                 if (textPozn != null && !string.IsNullOrWhiteSpace(textPozn.Text))
                 {
-                    MySqlCommand cmd2 = new MySqlCommand(@"INSERT INTO note (description) " + "VALUES (@des); ", con);
+                    cmd2 = new MySqlCommand(@"INSERT INTO note (description) " + "VALUES (@des); ", con);
                     cmd2.Parameters.Add(new MySqlParameter("@des", textPozn.Text));
                     cmd2.ExecuteNonQuery();
-
-                    MySqlCommand cmd = new MySqlCommand(@"INSERT INTO customer (surName,lastName,address,cost,id_Note) " + "VALUES (@sur,@last,@add,@co,@id); ", con);
-                    cmd.Parameters.Add(new MySqlParameter("@sur", textJmeno.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@last", textPrijmeni.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@add", textAdresa.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@co", textCastka.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@id", cmd2.LastInsertedId));
-                    cmd.ExecuteNonQuery();
-                    
-
-                    MySqlCommand cmd4 = new MySqlCommand(@"INSERT INTO component (name) " + "VALUES (@name); ", con);
-                    cmd4.Parameters.Add(new MySqlParameter("@name", "Nic"));
-                    cmd4.ExecuteNonQuery();
-
-                    MySqlCommand cmd3 = new MySqlCommand(@"INSERT INTO Invoice (id_Customer, id_Component) " + "VALUES (@id,@idC); ", con);
-                    cmd3.Parameters.Add(new MySqlParameter("@id", cmd.LastInsertedId));
-                    cmd3.Parameters.Add(new MySqlParameter("@idC", cmd4.LastInsertedId));
-                    cmd3.ExecuteNonQuery();
-                    MessageBox.Show("Note created");
+      
                 }
                 else
                 {
-                    MySqlCommand cmd2 = new MySqlCommand(@"INSERT INTO note (description) " + "VALUES (@des); ", con);
+                    cmd2 = new MySqlCommand(@"INSERT INTO note (description) " + "VALUES (@des); ", con);
                     cmd2.Parameters.Add(new MySqlParameter("@des", "Nic"));
                     cmd2.ExecuteNonQuery();
 
-                    MySqlCommand cmd = new MySqlCommand(@"INSERT INTO customer (surName,lastName,address,cost,id_Note) " + "VALUES (@sur,@last,@add,@co,@id); ", con);
-                    cmd.Parameters.Add(new MySqlParameter("@sur", textJmeno.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@last", textPrijmeni.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@add", textAdresa.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@co", textCastka.Text));
-                    cmd.Parameters.Add(new MySqlParameter("@id", cmd2.LastInsertedId));
-                    cmd.ExecuteNonQuery();
-
-                    MySqlCommand cmd4 = new MySqlCommand(@"INSERT INTO component (name) " + "VALUES (@name); ", con);
-                    cmd4.Parameters.Add(new MySqlParameter("@name", "Nic"));
-                    cmd4.ExecuteNonQuery();
-
-                    MySqlCommand cmd3 = new MySqlCommand(@"INSERT INTO Invoice (id_Customer, id_Component) " + "VALUES (@id,@idC); ", con);
-                    cmd3.Parameters.Add(new MySqlParameter("@id", cmd.LastInsertedId));
-                    cmd3.Parameters.Add(new MySqlParameter("@idC", cmd4.LastInsertedId));
-                    cmd3.ExecuteNonQuery();
-                    MessageBox.Show("Note created");
                 }
+                MySqlCommand cmd = new MySqlCommand(@"INSERT INTO customer (surName,lastName,address,cost,id_Note) " + "VALUES (@sur,@last,@add,@co,@id); ", con);
+                cmd.Parameters.Add(new MySqlParameter("@sur", textJmeno.Text));
+                cmd.Parameters.Add(new MySqlParameter("@last", textPrijmeni.Text));
+                cmd.Parameters.Add(new MySqlParameter("@add", textAdresa.Text));
+                cmd.Parameters.Add(new MySqlParameter("@co", textCastka.Text));
+                cmd.Parameters.Add(new MySqlParameter("@id", cmd2.LastInsertedId));
+                cmd.ExecuteNonQuery();
 
-                
 
+                MySqlCommand cmd4 = new MySqlCommand(@"INSERT INTO component (name) " + "VALUES (@name); ", con);
+                cmd4.Parameters.Add(new MySqlParameter("@name", "Nic"));
+                cmd4.ExecuteNonQuery();
 
-
+                MySqlCommand cmd3 = new MySqlCommand(@"INSERT INTO Invoice (id_Customer, id_Component) " + "VALUES (@id,@idC); ", con);
+                cmd3.Parameters.Add(new MySqlParameter("@id", cmd.LastInsertedId));
+                cmd3.Parameters.Add(new MySqlParameter("@idC", cmd4.LastInsertedId));
+                cmd3.ExecuteNonQuery();
+                MessageBox.Show("Note created");
 
                 textJmeno.Clear();
                 textPrijmeni.Clear();
@@ -139,12 +120,10 @@ namespace Projekt
                 MessageBox.Show("Vyplň všechny pole!!");
 
             }
-            
-
-            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //
+        private void showBtn_Click(object sender, EventArgs e)
         {
             textVypis.Clear();
             String query = "SELECT * FROM customer";
@@ -175,41 +154,10 @@ namespace Projekt
             }
             rdr.Close();
             
-
-            //POUZE BEZ FAKTURY
-           /* string sql = "SELECT Customer.surName, Customer.lastName, Customer.address, Customer.cost, Note.description FROM Customer JOIN Note on customer.id_Note = Note.id";
-            MySqlCommand cmd = new MySqlCommand(sql, con);
-            MySqlDataReader rdr = cmd.ExecuteReader();
-            string newLine = Environment.NewLine;
-
-            while (rdr.Read())
-            {
-
-
-                textVypis.Text += "Jmeno: " + rdr.GetString(0) + " " + rdr.GetString(1) + newLine + "Adresa: " + rdr.GetString(2) + newLine + "Částka: " + rdr.GetInt32(3) + newLine + "Poznámka: " + rdr.GetString(4) + newLine + newLine;
-
-            }
-            rdr.Close();
-            */
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void updateBtn_Click(object sender, EventArgs e)
         {
-           /* if(textJmeno != null && !string.IsNullOrWhiteSpace(textJmeno.Text))
-            {
-                query = "UPDATE customer SET surName = '" + textJmeno.Text + "', lastName = '" + textPrijmeni.Text + "', address = '" + textAdresa.Text + "', cost = '" + textCastka.Text + "'WHERE id='" + id + "'";
-                MySqlDataAdapter SDA = new MySqlDataAdapter(query, con);
-                SDA.SelectCommand.ExecuteNonQuery();
-                
-            }
-            else
-            {
-                query = "UPDATE note SET description = '" + textPozn.Text + "' WHERE id='" + id + "'";
-                MySqlDataAdapter SDA = new MySqlDataAdapter(query, con);
-                SDA.SelectCommand.ExecuteNonQuery();
-               
-            }
-            */
             query = "UPDATE customer SET surName = '" + textJmeno.Text + "', lastName = '" + textPrijmeni.Text + "', address = '" + textAdresa.Text + "', cost = '" + textCastka.Text + "'WHERE id='" + id + "'";
             MySqlDataAdapter SDA = new MySqlDataAdapter(query, con);
             SDA.SelectCommand.ExecuteNonQuery();
@@ -259,7 +207,7 @@ namespace Projekt
         }
 
 
-        private void button4_Click(object sender, EventArgs e)
+        private void deleteBtn_Click(object sender, EventArgs e)
         {
             if (textJmeno != null && !string.IsNullOrWhiteSpace(textJmeno.Text))
             {
@@ -318,11 +266,7 @@ namespace Projekt
             Count();
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
-        }
-
+        //Vyhledani zakaznika
         private void search_Click(object sender, EventArgs e)
         {
             if(textBox1 != null && !string.IsNullOrWhiteSpace(textBox1.Text))
@@ -355,7 +299,6 @@ namespace Projekt
         public void fill_Number()
         {
             query = "SELECT COUNT(id) FROM Customer WHERE CONCAT(surName, lastName, address, cost) like '%" + textBox1.Text + "%'";
-            //query = "SELECT COUNT(id) FROM `customer` GROUP BY cost HAVING (surName, lastName, address, cost) like '%" + textBox1.Text.ToString() + "%'";
             MySqlCommand cmd = new MySqlCommand(query, con);
             MySqlDataReader rdr = cmd.ExecuteReader();
             string newLine = Environment.NewLine;
@@ -374,14 +317,7 @@ namespace Projekt
            
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

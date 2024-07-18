@@ -79,7 +79,7 @@ class CustomLayout extends StatelessWidget {
               ElevatedButton(
                 onPressed: () => Get.back(),
                 child: Text('Back'),
-                style: ElevatedButton.styleFrom(primary: Colors.green),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               )
             ],
             scrollable: true,

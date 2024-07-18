@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\projects\\spsul\\pulrocnikovka\\projekt\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\projects\\spsul\\pulrocnikovka\\projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\projekt\\edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\projects\\spsul\\pulrocnikovka\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|c:\\users\\venca\\projects\\spsul\\pulrocnikovka\\projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F34AF5EB-C135-4040-8E15-1EBE7CC2900E}|Projekt\\Projekt.csproj|solutionrelative:projekt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Projekt\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.Designer.cs",
+              "RelativeToolTip": "Projekt\\Form1.Designer.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAjwJsAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T12:44:38.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs",
               "RelativeDocumentMoniker": "Projekt\\Form1.cs",
               "ToolTip": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs",
               "RelativeToolTip": "Projekt\\Form1.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAtwJgAAAAMAAAA",
+              "ViewState": "AQIAAAQBAAAAAAAAAAAcwD4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-07T15:39:12.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Edit.cs [N\u00E1vrh]",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Edit.cs",
               "RelativeDocumentMoniker": "Projekt\\Edit.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Invoice.cs [N\u00E1vrh]",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Invoice.cs",
               "RelativeDocumentMoniker": "Projekt\\Invoice.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [N\u00E1vrh]",
               "DocumentMoniker": "C:\\Users\\Venca\\Projects\\SPSUL\\PulRocnikovka\\Projekt\\Form1.cs",
               "RelativeDocumentMoniker": "Projekt\\Form1.cs",

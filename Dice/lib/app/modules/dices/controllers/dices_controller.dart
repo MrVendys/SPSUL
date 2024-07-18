@@ -75,6 +75,16 @@ class DicesController extends GetxController {
     dices.removeAt(index);
     scoreService.rolledDices = dices;
   }
+  moveDice(int index) {
+    dices.add(stoppedDices[index]);
+    stoppedDices.removeAt(index);
+    scoreService.rolledDices = dices;
+
+    /*stoppedDices.add(dices[index]);
+    dices.removeAt(index);
+    scoreService.rolledDices = dices;
+    */
+  }
 
   updateDices() {
     Dice d = Dice(numberOfScan);
@@ -208,7 +218,7 @@ class DicesController extends GetxController {
               nextPlayer(),
             },
             child: Text('Ok'),
-            style: ElevatedButton.styleFrom(primary: Colors.green),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
           )
         ],
       ),
