@@ -54,7 +54,7 @@ Tento projekt slouží pro vykreslování různých tvarů na canvas zapomocí v
 - V této složce soubor PrikazoveVykreslovani.exe
 - Kliknout na něj
 - Vpravo nahoře tlačítko "Download raw file"
-### Celé řešení
+### Celé řešení (kód)
 - Vrátit se zpět na [repozitář SPSUL](../)
 
 
