@@ -2,10 +2,11 @@ import 'package:dices/app/models/dice.dart';
 import 'package:dices/app/models/player.dart';
 
 import 'package:get/get.dart';
-
+//Pomocna trida na udrzovani hodnot a komunikaci stranek
 class ScoreService {
   RxList<Dice> rolledDices = <Dice>[].obs;
   RxList<Dice> stoppedDices = <Dice>[].obs;
+  //Natvrdo definovani prvni 2 hraci
   RxList<Player> players = <Player>[
     Player("Venca"),
     Player("Petr"),
@@ -17,8 +18,9 @@ class ScoreService {
   RxInt currentPlayer = 0.obs;
   bool doAddRecord = false;
   int numberOfRolls = 3;
-
+  //Funkce na zmenu zapisu v zapisniku po kliknuti na tlacitko "Zapsat"
   changeRecord(String figureToChange, String value) {
+    //Kontrola prazdne hodnoty
     if (value != "") {
       players[currentPlayer.value]
           .records

@@ -11,9 +11,10 @@ import 'package:get/get.dart';
 import '../../../models/player.dart';
 import '../controllers/home_controller.dart';
 
+//Trida stavejici vzhled stranky "HomeView" (Zapisnik)
 class HomeView extends GetView<HomeController> {
   HomeView({Key? key}) : super(key: key);
-
+  //Nahodna jmena pro pripad, ze uzivatel nezada svoje
   List<String> names = [
     "Dan",
     "Honza",
@@ -26,7 +27,6 @@ class HomeView extends GetView<HomeController> {
     "Kuba",
     "Tomáš",
     "Květuše",
-    "AmongUs"
   ];
   @override
   Widget build(BuildContext context) {

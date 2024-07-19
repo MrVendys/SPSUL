@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+//Zkusit smazat
 class ScoreRow extends StatelessWidget {
   final String title;
   final List<String> values;

@@ -4,16 +4,19 @@ import 'package:dices/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+//Vlastni vzhled sdileny pro vsechny stranky
 class CustomLayout extends StatelessWidget {
   final Widget child;
   final String title;
 
+  //Konstruktor
   const CustomLayout({
     Key? key,
     required this.child,
     required this.title,
   }) : super(key: key);
 
+  //Seskladane objekty tak, jak se maji objevit na strance
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,4 +1,6 @@
+//Trida na seskladani figur podle hozenych kostek
 class CheckDices {
+  //Listy vsech figur
   List<int> listOfDiceNumbers = [];
   List<int> jednicky = [];
   List<int> dvojky = [];
@@ -20,6 +22,30 @@ class CheckDices {
   List<int> general = [];
   List<List<int>> listy = [];
 
+  //Zkusit, kdyz tak smazat
+  //Konstruktor
+  CheckDices(this.listOfDiceNumbers) {
+    listy.add(List<int> jednicky = []);
+    listy.add(List<int> dvojky = []);
+    listy.add( List<int> trojky = []);
+    listy.add(List<int> ctyrky = []);
+    listy.add(List<int> petky = []);
+    listy.add(List<int> sestky = []);
+    listy.add(List<int> male = []);
+    listy.add(List<int> velke = []);
+    listy.add(List<int> sude = []);
+    listy.add(List<int> liche = []);
+    listy.add(List<int> rada = []);
+    listy.add(List<int> dvojice = []);
+    listy.add(List<int> trojice = []);
+    listy.add(List<int> ctyriPlusDva = []);
+    listy.add(List<int> petPlusJedna = []);
+    listy.add(List<int> pyramida = []);
+    listy.add(List<int> vrhcab = []);
+    listy.add(List<int> general = []);
+    doCheck();
+  }
+  /*
   CheckDices(this.listOfDiceNumbers) {
     listy.add(jednicky);
     listy.add(dvojky);
@@ -40,7 +66,11 @@ class CheckDices {
     listy.add(vrhcab);
     listy.add(general);
     doCheck();
-  }
+  }*/
+  //Naplneni 
+
+  //Kontrola ciselne hodnoty kazde kostky a umisteni ji do spravne figury
+  //Hodil jsem kostku s 1 -> muze to byt figura jednicky, rada, male, liche
   doCheck() {
     List<int> listOfNumbers = [0, 0, 0, 0, 0, 0];
     for (int i in listOfDiceNumbers) {
@@ -66,28 +96,36 @@ class CheckDices {
         }
       }
       if (i == 3) {
+        //trojky
         listy[2].add(i);
         if (!listy[10].contains(i)) {
+          //rada
           listy[10].add(i);
         }
       }
       if (i == 4) {
+        //ctyrky
         listy[3].add(i);
         if (!listy[10].contains(i)) {
+          //rada
           listy[10].add(i);
         }
       }
       if (i == 5) {
+        //petky
         listy[4].add(i);
         if (!listy[10].contains(i)) {
+          //rada
           listy[10].add(i);
         }
       }
       if (i == 6) {
-        listy[5].add(i); //sestky
+        //sestky
+        listy[5].add(i); 
         listy[17].add(i);
         if ((!listy[10].contains(i)) == true) {
-          listy[10].add(i); //rada
+          //rada
+          listy[10].add(i);
         }
       }
       if (i < 4) {
@@ -99,7 +137,7 @@ class CheckDices {
         listy[7].add(i);
       }
       if (i % 2 == 0) {
-        //duce
+        //sude
         listy[8].add(i);
       }
       if (i % 2 == 1) {
@@ -107,6 +145,7 @@ class CheckDices {
         listy[9].add(i);
       }
     }
+    //Kontrola slozitejsich figur, dvojice, trojice, pyramida, vrhcav, 4+2, 5+1, general
     for (var i = 0; i < listOfNumbers.length; i++) {
       
       if (listOfNumbers[i] == 2) {
@@ -148,11 +187,14 @@ class CheckDices {
         doAdd(14, 5, i + 1);
         if (listOfNumbers.contains(1)) {
           doAdd(14, 1, listOfNumbers.indexOf(1));
-        }
+        // }
       }
     }
   }
-
+  //Pridej do prislusneho listu pocet kostek tolikrat, kolikrat se hodila
+  //"position" -> figura
+  //"count" -> pocet hozenych kostek se stejnym cislem
+  //"number" -> cislo na hozene kostce
   doAdd(int position, int count, int number) {
     for (var i = 0; i < count; i++) {
       listy[position].add(number);

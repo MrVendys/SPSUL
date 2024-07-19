@@ -1,5 +1,5 @@
 
-
+//List figur ve hre
 List<String> figuresDictionary = [
   "jedničky",
   "dvojky",

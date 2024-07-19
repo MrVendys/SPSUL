@@ -10,7 +10,7 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart'; 
  
 part 'app_routes.dart'; 
- 
+ //Routy na jednotlive vzhledy (view) stranek
  class AppPages {
   AppPages._(); 
  

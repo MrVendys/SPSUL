@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../controllers/dices_controller.dart';
-
+//Trida stavejici vzhled stranky "Dices"
 class DicesView extends GetView<DicesController> {
   const DicesView({Key? key}) : super(key: key);
 
@@ -92,7 +92,8 @@ class DicesView extends GetView<DicesController> {
                             onTap: () => controller.moveDice(index),
                           );
                         }).toList(),
-                        /*...controller.stoppedDices.where((x) => controller.stoppedDices.indexOf(x) < 3).map(
+                        /*To, co tam bylo pred tim
+                        ...controller.stoppedDices.where((x) => controller.stoppedDices.indexOf(x) < 3).map(
                               (d) => RolledDice(count: d.count.value),
                             )
                             .toList(),*/
@@ -117,9 +118,11 @@ class DicesView extends GetView<DicesController> {
               SizedBox(
                 height: 12,
               ),
+              //Widget s tlacitky
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  //Tlacitko "Hazej" a reseni poctu probehlich hodu
                   Obx(
                     () => ElevatedButton(
                       onPressed: () {
@@ -142,6 +145,7 @@ class DicesView extends GetView<DicesController> {
                   SizedBox(
                     width: 12,
                   ),
+                  //Tlacitko "Reset"
                   ElevatedButton(
                     onPressed: () => controller.reset(),
                     child: Text('RESET!'),
@@ -149,6 +153,7 @@ class DicesView extends GetView<DicesController> {
                   ),
                 ],
               ),
+              //Tlacitko "Naskenuj kostky"
               ElevatedButton(
                 onPressed: () {
                   controller.scan();
@@ -156,6 +161,7 @@ class DicesView extends GetView<DicesController> {
                 child: Text('SCAN DICE'),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               ),
+              //Tlacitko zapsat
               ElevatedButton(
                 onPressed: () {
                   controller.showAddRecordDialog(context);
@@ -163,6 +169,7 @@ class DicesView extends GetView<DicesController> {
                 child: Text('ADD RECORD'),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               ),
+              //Tlacitko Ukoncit kolo
               ElevatedButton(
                 onPressed: () {
                   controller.nextPlayer();

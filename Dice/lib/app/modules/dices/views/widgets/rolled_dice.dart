@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart'; 
  
+
+//Trida starajici se o vykreslovani hozenych kostek
 class RolledDice extends StatelessWidget { 
   final int count; 
   final GestureTapCallback? onTap; 

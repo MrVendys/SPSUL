@@ -5,6 +5,7 @@ import 'package:dices/app/services/score_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+//Ridici trida pro stranku "Home" (Zapisnik)
 class HomeController extends GetxController {
   final scoreService = Get.find<ScoreService>();
 
