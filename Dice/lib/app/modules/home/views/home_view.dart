@@ -31,7 +31,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return CustomLayout(
-      title: 'Score',
+      title: 'Skóre',
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: SingleChildScrollView(
@@ -83,7 +83,7 @@ class HomeView extends GetView<HomeController> {
                                     : controller.nameController.text));
                             controller.nameController.text = "";
                           },
-                          child: Text('Add Player'),
+                          child: Text('Přidat hráče'),
                           //style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                         ),
                       ],

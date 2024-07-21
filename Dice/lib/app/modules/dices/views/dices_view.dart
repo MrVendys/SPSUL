@@ -14,7 +14,7 @@ class DicesView extends GetView<DicesController> {
   @override
   Widget build(BuildContext context) {
     return CustomLayout(
-      title: 'Dices',
+      title: 'Hra',
       child: SizedBox(
         width: double.infinity,
         height: double.infinity,
@@ -25,12 +25,12 @@ class DicesView extends GetView<DicesController> {
             children: [
               Obx(
                 () => Padding(
-                  padding: const EdgeInsets.all(15.0),
+                  padding: const EdgeInsets.all(25.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Current player: ${controller.scoreService.players[controller.scoreService.currentPlayer.toInt()].name}',
+                        'Aktuální hráč: ${controller.scoreService.players[controller.scoreService.currentPlayer.toInt()].name}',
                         style: TextStyle(fontSize: 28.0),
                       ),
                     ],
@@ -42,7 +42,7 @@ class DicesView extends GetView<DicesController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Available  dices:',
+                      'Dostupné kostky:',
                       style: TextStyle(fontSize: 40.0),
                     ),
                     Row(
@@ -50,10 +50,10 @@ class DicesView extends GetView<DicesController> {
                       children: [
                         ...controller.dices.where((x) => x.position < 3).map((t) {
                           int index = controller.dices.indexOf(t);
-                          return RolledDice(
+                          return controller.scoreService.numberOfRolls < 3 ? RolledDice(
                             count: t.count.value,
                             onTap: () => controller.removeDice(index),
-                          );
+                          ): RolledDice(count: t.count.value);
                         }).toList(),
                       ],
                     ),
@@ -62,10 +62,10 @@ class DicesView extends GetView<DicesController> {
                       children: [
                         ...controller.dices.where((x) => x.position > 2).map((t) {
                           int index = controller.dices.indexOf(t);
-                          return RolledDice(
+                          return controller.scoreService.numberOfRolls < 3 ? RolledDice(
                             count: t.count.value,
                             onTap: () => controller.removeDice(index),
-                          );
+                          ): RolledDice(count: t.count.value);
                         }).toList(),
                       ],
                     ),
@@ -78,7 +78,7 @@ class DicesView extends GetView<DicesController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Stopped dices:',
+                      'Odložené kostky:',
                       style: TextStyle(fontSize: 40.0),
                     ),
                     Row(
@@ -86,17 +86,13 @@ class DicesView extends GetView<DicesController> {
                       children: [
                          ...controller.stoppedDices.where((x) => controller.stoppedDices.indexOf(x) < 3).map(
                               (d) {
-                          int index = controller.stoppedDices.indexOf(d);
-                          return RolledDice(
-                            count: d.count.value,
-                            onTap: () => controller.moveDice(index),
-                          );
+                                    int index = controller.stoppedDices.indexOf(d);
+                                    return d.alreadyStopped == false ? RolledDice(
+                                    count: d.count.value, 
+                                    onTap: () => controller.moveDice(index),
+                                    ) : RolledDice(count: d.count.value);
+                                
                         }).toList(),
-                        /*To, co tam bylo pred tim
-                        ...controller.stoppedDices.where((x) => controller.stoppedDices.indexOf(x) < 3).map(
-                              (d) => RolledDice(count: d.count.value),
-                            )
-                            .toList(),*/
                       ],
                     ),
                     Row(
@@ -104,11 +100,11 @@ class DicesView extends GetView<DicesController> {
                       children: [
                         ...controller.stoppedDices.where((x) => controller.stoppedDices.indexOf(x) > 2).map(
                               (d) {
-                          int index = controller.stoppedDices.indexOf(d);
-                          return RolledDice(
-                            count: d.count.value,
-                            onTap: () => controller.moveDice(index),
-                          );
+                                    int index = controller.stoppedDices.indexOf(d);
+                                    return d.alreadyStopped == false ? RolledDice(
+                                    count: d.count.value, 
+                                    onTap: () => controller.moveDice(index),
+                                    ) : RolledDice(count: d.count.value);
                         }).toList(),
                       ],
                     )
@@ -134,7 +130,7 @@ class DicesView extends GetView<DicesController> {
                         controller.roll();
                         
                       },
-                      child: Text('ROLL!'),
+                      child: Text('HOD!'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: controller.isRollDisabled.value
                             ? Colors.grey
@@ -158,7 +154,7 @@ class DicesView extends GetView<DicesController> {
                 onPressed: () {
                   controller.scan();
                 },
-                child: Text('SCAN DICE'),
+                child: Text('SKENOVAT'),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               ),
               //Tlacitko zapsat
@@ -166,7 +162,7 @@ class DicesView extends GetView<DicesController> {
                 onPressed: () {
                   controller.showAddRecordDialog(context);
                 },
-                child: Text('ADD RECORD'),
+                child: Text('ZAPSAT'),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               ),
               //Tlacitko Ukoncit kolo
@@ -174,7 +170,7 @@ class DicesView extends GetView<DicesController> {
                 onPressed: () {
                   controller.nextPlayer();
                 },
-                child: Text('END TURN'),
+                child: Text('UKONČIT KOLO'),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               ),
             ],

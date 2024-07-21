@@ -13,7 +13,7 @@ class HelperView extends GetView<HelperController> {
   @override
   Widget build(BuildContext context) {
     return CustomLayout(
-      title: 'Helper',
+      title: 'Pomocník',
       child: SizedBox(
         width: double.infinity,
         height: double.infinity,
@@ -26,7 +26,7 @@ class HelperView extends GetView<HelperController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Rolled dices:',
+                      'Hozené kostky:',
                       style: TextStyle(fontSize: 40.0),
                     ),
                     Row(

@@ -8,6 +8,7 @@ class Dice {
   RxInt count = 1.obs;
   int number = 1;
   int position;
+  bool alreadyStopped = false;
   Dice(this.position);
 
   Future<void> rollNumber() async {

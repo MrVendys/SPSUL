@@ -30,12 +30,14 @@ class CustomLayout extends StatelessWidget {
               icon: Icon(Icons.help_outline))
         ],
       ),
+      
+      /*
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.play_arrow_rounded),
         backgroundColor: Colors.green,
         onPressed: () => Get.offNamed(Routes.DICES),
-      ),
+      ),*/
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
         child: SizedBox(
@@ -48,6 +50,13 @@ class CustomLayout extends StatelessWidget {
                 child: IconButton(
                   icon: const Icon(Icons.table_chart),
                   onPressed: () => Get.offNamed(Routes.HOME),
+                ),
+              ),
+              Expanded(
+                child: FloatingActionButton(
+                  onPressed: () => Get.offNamed(Routes.DICES),
+                  child: const Icon(Icons.play_arrow_rounded),
+                  backgroundColor: Colors.green,
                 ),
               ),
               Expanded(
@@ -70,7 +79,7 @@ class CustomLayout extends StatelessWidget {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text('How to play'),
+            title: Text('Jak hrát'),
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: const [
@@ -81,7 +90,7 @@ class CustomLayout extends StatelessWidget {
             actions: [
               ElevatedButton(
                 onPressed: () => Get.back(),
-                child: Text('Back'),
+                child: Text('Zpátky'),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               )
             ],

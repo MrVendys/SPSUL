@@ -61,6 +61,11 @@ class DicesController extends GetxController {
   //Funkce pro hozeni kostek
   void roll() {
     
+    for (var d in stoppedDices){
+      d.alreadyStopped = true;
+    }
+    scoreService.stoppedDices = stoppedDices;
+
     if (numberOfRolls == 0.obs && playingPlayer!.records[18].value != 0) {
       scoreService.numberOfRolls++;
       playingPlayer!.records[18].value--;
@@ -70,7 +75,6 @@ class DicesController extends GetxController {
       
       d.rollNumber(); 
     } 
-
     scoreService.rolledDices = dices;
   }
 

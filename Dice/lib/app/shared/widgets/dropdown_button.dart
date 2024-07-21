@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Dropdown na zapisovani figur. -> Vyber figur
 class DropDownButton<T> extends StatelessWidget {
   final T value;
   final List<DropdownMenuItem<T>> items;
