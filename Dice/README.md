@@ -7,12 +7,12 @@ Projekt vznikl v rámci splnění předmětu ve 4. ročníku na střední škole
 Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozici 6 kostek, 2 hody a snažíte se sestavit dané figury s co možná nejvíce body. Kdo první má všechny figury sestavené, končí hru. Kdo nasbírá více bodů, vyhrává.
 
 ### Jednoduchá pravidla
-- Hráč má ve svým tahu 2 hody.
+- Hráč má ve svým tahu 3 hody.
 - První hod hází všemi kostkami. Poté si zvolí, jakou figuru by chtěl hodit, odloží si případně kostky, které jsou součástí figury na stranu, a se zbylými hází.
-- Pokud se mu po druhém hodu povedla hodit nějaká figura, může se rozhodnout, zda si jí nechá a zapíše si součet bodů na kostkách do patřičné figury nebo to vzdá a ukončí své kolo. Poté hraje další hráč.
-- Pokud hráč nechce házet, nebo po prvním hodu hodil figuru, nebo nehodil na kostkách nic dobrého, z čeho by šla postavit nějaká chybějící figura, může si zbylé hody zapsat do hodech k dobru - "Dober".
-- "Dobra" jsou nevyužité hody, které hráč může využít ve svých dalších kolech nad rámec 2 hodů za kolo. Po použití se dobra odeberou.  (Např. První kolo nehodím ani jednou -> zapíšu si dvě "Dobra" -> Další kolo můžu házet o dva hody víckrát)
-- 
+- Pokud se mu do třetího hodu povedla poskládat nějaká figura, může se rozhodnout, zda si jí nechá a zapíše si součet bodů na kostkách do patřičné figury nebo to vzdá a ukončí své kolo. Poté hraje další hráč.
+- Pokud hráč nechce házet, nebo po prvním hodu hodil figuru, nebo nehodil na kostkách nic dobrého, z čeho by šla postavit nějaká chybějící figura, může si zbylé hody zapsat do hodů k dobru - "Dobra".
+- "Dobra" jsou nevyužité hody, které hráč může využít ve svých dalších kolech nad rámec 3 hodů za kolo. Po použití se dobra odeberou.  (Např. První kolo nehodím ani jednou -> zapíšu si tři "Dobra" -> Další kolo můžu házet o tři hody víckrát)
+
 > **⚠️ Upozornění: Tento projekt není ve spustitelném tvaru.**
 
 ## ⚙️ Funkce
