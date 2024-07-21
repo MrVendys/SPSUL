@@ -70,4 +70,10 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 - **Dart**: Programovací jazyk
 - **Flutter**: Programovací prostředí
 
+## 🛠️ Instalace
+### .apk souboru
+- 
+### Celé řešení
+- Vrátit se zpět na [repozitář SPSUL](../)
+
 
