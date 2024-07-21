@@ -74,7 +74,10 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 
 ## 🛠️ Instalace
 ### .apk souboru
-- 
+- Zde odkaz na Google Drive, kde si můžete stáhnout Kostky.apk soubor.
+- Je nutné povolit na mobilním zařízení "Instalace z neznámých zdrojů"
+- Testováno na Android - Samsung S10+
+- https://drive.google.com/file/d/1uWf35dAy1dB3D6OYQXDQ796nW32rkK93/view?usp=sharing
 ### Celé řešení
 - Vrátit se zpět na [repozitář SPSUL](../)
 
