@@ -60,8 +60,8 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 - **📂models**: Třídy, nesouvisející s konkrétní stránkou.
 - **📂modules**: Složka obsahující jednotlivé stránky.
 - **📂modules\dices**: Řešení stránky dices. Obsahuje:
-  -**📂controllers\dices_controller.dart**: Logické řešení stránky.
-  -**📂view\dices_view.dart**: Grafické řešení stránky.
+  - **📂controllers/dices_controller.dart**: Logické řešení stránky.
+  - **📂view/dices_view.dart**: Grafické řešení stránky.
 - **📂routes**: Navigace na view stránky.
 - **📂services**: Pomocné třídy komunikující s více stránkami.
 - **📂shared**: Sdílená data a widgety všem stránkám.
