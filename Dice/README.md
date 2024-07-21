@@ -18,15 +18,17 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 ## ⚙️ Funkce
 
 - Plné grafické prostředí.
-- Házení kostek v aplikaci
+- Nápověda v pravém horním rohu.
+- Házení kostek přímo v aplikaci
+- Možnost vybýrat si, kterými kosktami se bude hazet.
+- Nemůže se házet bez kostek.
+- Nemůžou se odkládat kostky před prvním hodem.
 - Implementován automatický systém "Hodů k dobru"
 - Skenování reálné kostky
 - Ukládání posledního hodu
-- Možnost vybýrat si, kterými kosktami se bude hazet.
 - "Pomocník". Pomocí pravdepodobnosti radí, která figura má největší šanci na postavení
-- Nápověda v pravém horním rohu.
-- Možnost hry pro více hráčů na jednom zařízení
 - Záznamník bodů pro hráče
+- Možnost hry pro více hráčů na jednom zařízení
 
 ## 🧠 Použité techniky
 
