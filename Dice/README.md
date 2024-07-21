@@ -31,6 +31,8 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 ## 🧠 Použité techniky
 
 - Widgety
+  - Ve Flutteru každý objekt na obrazovce se nazývá "widget".
+  - Vzhled stránky závisý na volbě a uspořádání jednotlivých widgetů -> tzv. strom widgetů
 - Rozdělení projektu na Controller, View
 - Piužití fotoaparátu na skenování
   
@@ -51,11 +53,17 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 
 ## 📂 Struktura projektu
 
-- **2048.sln**: Hlavní řešení projektu.
-- **Program.cs**: Hlavní vstupní bod aplikace.
-- **Form1.cs**: Logika i grafické rozhraní pomocí Windows Forms.
-- **Cell.cs**: Třída typu User control pro jednotlivou destičku
-- **GameOver.cs** Třída typu Windows Forms. Okno konce hry.
+- **📂lib**: Hlavní řešení projektu.
+- **main.dart**: Hlavní vstup aplikace.
+- **📂app**: Kód aplikace.
+- **📂models**: Třídy, nesouvisející s konkrétní stránkou
+- **📂modules**: Složka obsahující jednotlivé stránky.
+- **📂modules\dices**: Řešení stránky dices. Obsahuje:
+  -**📂controllers\dices_controller.dart**: Logické řešení stránky
+  -**📂view\dices_view.dart**: Grafické řešení stránky
+- **📂routes**: Navigace na view stránky
+- **📂services**: Pomocné třídy komunikující s více stránkami
+- **📂shared**: Sdílená data a widgety všem stránkám
 
 ## 🚀 Technologie
 
