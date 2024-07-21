@@ -25,28 +25,6 @@ class CheckDices {
   //Zkusit, kdyz tak smazat
   //Konstruktor
   CheckDices(this.listOfDiceNumbers) {
-    listy.add(List<int> jednicky = []);
-    listy.add(List<int> dvojky = []);
-    listy.add( List<int> trojky = []);
-    listy.add(List<int> ctyrky = []);
-    listy.add(List<int> petky = []);
-    listy.add(List<int> sestky = []);
-    listy.add(List<int> male = []);
-    listy.add(List<int> velke = []);
-    listy.add(List<int> sude = []);
-    listy.add(List<int> liche = []);
-    listy.add(List<int> rada = []);
-    listy.add(List<int> dvojice = []);
-    listy.add(List<int> trojice = []);
-    listy.add(List<int> ctyriPlusDva = []);
-    listy.add(List<int> petPlusJedna = []);
-    listy.add(List<int> pyramida = []);
-    listy.add(List<int> vrhcab = []);
-    listy.add(List<int> general = []);
-    doCheck();
-  }
-  /*
-  CheckDices(this.listOfDiceNumbers) {
     listy.add(jednicky);
     listy.add(dvojky);
     listy.add(trojky);
@@ -66,9 +44,20 @@ class CheckDices {
     listy.add(vrhcab);
     listy.add(general);
     doCheck();
-  }*/
+  }
   //Naplneni 
 
+ 
+  //Pridej do prislusneho listu pocet kostek tolikrat, kolikrat se hodila
+  //"position" -> figura
+  //"count" -> pocet hozenych kostek se stejnym cislem
+  //"number" -> cislo na hozene kostce
+  
+  doAdd(int position, int count, int number) {
+    for (var i = 0; i < count; i++) {
+      listy[position].add(number);
+    }
+  }
   //Kontrola ciselne hodnoty kazde kostky a umisteni ji do spravne figury
   //Hodil jsem kostku s 1 -> muze to byt figura jednicky, rada, male, liche
   doCheck() {
@@ -187,17 +176,9 @@ class CheckDices {
         doAdd(14, 5, i + 1);
         if (listOfNumbers.contains(1)) {
           doAdd(14, 1, listOfNumbers.indexOf(1));
-        // }
+         }
       }
     }
   }
-  //Pridej do prislusneho listu pocet kostek tolikrat, kolikrat se hodila
-  //"position" -> figura
-  //"count" -> pocet hozenych kostek se stejnym cislem
-  //"number" -> cislo na hozene kostce
-  doAdd(int position, int count, int number) {
-    for (var i = 0; i < count; i++) {
-      listy[position].add(number);
-    }
-  }
 }
+
