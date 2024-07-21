@@ -13,7 +13,6 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 - Pokud hráč nechce házet, nebo po prvním hodu hodil figuru, nebo nehodil na kostkách nic dobrého, z čeho by šla postavit nějaká chybějící figura, může si zbylé hody zapsat do hodů k dobru - "Dobra".
 - "Dobra" jsou nevyužité hody, které hráč může využít ve svých dalších kolech nad rámec 3 hodů za kolo. Po použití se dobra odeberou.  (Např. První kolo nehodím ani jednou -> zapíšu si tři "Dobra" -> Další kolo můžu házet o tři hody víckrát)
 
-> **⚠️ Upozornění: Tento projekt není ve spustitelném tvaru.**
 
 ## ⚙️ Funkce
 
@@ -58,14 +57,14 @@ Projekt je remakem deskové hry Kostky pro mobilní zařízení. Máte k dispozi
 - **📂lib**: Hlavní řešení projektu.
 - **main.dart**: Hlavní vstup aplikace.
 - **📂app**: Kód aplikace.
-- **📂models**: Třídy, nesouvisející s konkrétní stránkou
+- **📂models**: Třídy, nesouvisející s konkrétní stránkou.
 - **📂modules**: Složka obsahující jednotlivé stránky.
 - **📂modules\dices**: Řešení stránky dices. Obsahuje:
-  -**📂controllers\dices_controller.dart**: Logické řešení stránky
-  -**📂view\dices_view.dart**: Grafické řešení stránky
-- **📂routes**: Navigace na view stránky
-- **📂services**: Pomocné třídy komunikující s více stránkami
-- **📂shared**: Sdílená data a widgety všem stránkám
+  -**📂controllers\dices_controller.dart**: Logické řešení stránky.
+  -**📂view\dices_view.dart**: Grafické řešení stránky.
+- **📂routes**: Navigace na view stránky.
+- **📂services**: Pomocné třídy komunikující s více stránkami.
+- **📂shared**: Sdílená data a widgety všem stránkám.
 
 ## 🚀 Technologie
 
