@@ -69,13 +69,13 @@ class HelperView extends GetView<HelperController> {
                   children: [
                     CustomDataText(
                         text:
-                            "${controller.figures[0].name.toString()} ${controller.figures[0].count.toString()}+ ${controller.figures[0].percent.toInt()}%"),
+                            "${controller.figures[0].name.toString()} ${controller.figures[0].score.toString()}+ ${controller.figures[0].percent.toInt()}%"),
                     CustomDataText(
                         text:
-                            "${controller.figures[1].name.toString()} ${controller.figures[1].count.toString()}+ ${controller.figures[1].percent.toInt()}%"),
+                            "${controller.figures[1].name.toString()} ${controller.figures[1].score.toString()}+ ${controller.figures[1].percent.toInt()}%"),
                     CustomDataText(
                         text:
-                            "${controller.figures[2].name.toString()} ${controller.figures[2].count.toString()}+ ${controller.figures[2].percent.toInt()}%"),
+                            "${controller.figures[2].name.toString()} ${controller.figures[2].score.toString()}+ ${controller.figures[2].percent.toInt()}%"),
                     
                   ],
                 ),

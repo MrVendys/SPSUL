@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:dices/app/models/dice.dart';
-import 'package:image/image.dart' as I;
+import 'package:dices/app/modules/dices/classes/calculate_dice.dart';
+import 'package:image/image.dart' as img;
 import 'package:dices/app/services/score_service.dart';
 import 'package:dices/app/shared/data/figures.dart';
 import 'package:dices/app/shared/widgets/dropdown_button.dart';
@@ -135,46 +136,32 @@ class DicesController extends GetxController {
   }
   //Skenovani kostek z fotoaparatu podle barvy pixelu. (Test na jedne zlute kostce)
   void scan() async {
+    
     dotCount = 0.0.obs;
     final tempImage = await ImagePicker().pickImage(source: ImageSource.camera);
     if (tempImage == null) return;
 
-    image = AssetImage(tempImage.path);
+    // Ulož cestu
+    final file = File(tempImage.path);
+/*
+    final result = await FilePicker.platform.pickFiles(
+      type: FileType.image,
+    );
 
-    int color1 = 0;
-    int color2 = 0;
+    if (result == null) return;
+*/
+    Uint8List bytes = await file.readAsBytes();
 
-    I.Image? img = I.decodeImage(File(tempImage.path).readAsBytesSync());
+    await countDiceDotsFromBytes(bytes).then((value) => numberOnDice = value);
+    print("Počet: $numberOnDice");
 
-    //Projedi vsech pixelu a kontrola barvy. Zluta (Kostka) X Cerna (Tecka)
-    for (var i = 0; i < img!.width; i++) {
-      for (var j = 0; j < img.height; j++) {
-        int pixel = img.getPixelSafe(i, j);
-        Color pixelColor = getFlutterColor(pixel);
-        //kontrolování žluté
-        if ((pixelColor.blue > 0 && pixelColor.blue < 70) &&
-            (pixelColor.red > 150 && pixelColor.red < 240) &&
-            (pixelColor.green > 100 && pixelColor.green < 220)) {
-          color1++;
-        }
-        //kontrolování černé
-        if (pixelColor.blue < 45 &&
-            pixelColor.green < 45 &&
-            pixelColor.red < 45) {
-          color2++;
-        }
-      }
+    if (numberOnDice > 6){
+      numberOnDice = 6;
     }
-    //Podle procent urceni poctu tecek
-    int wholeDice = color1 + color2;
-    int color2Precent = ((color2 / wholeDice) * 100).toInt();
-
-    if (color2Precent < 4) numberOnDice = 1;
-    if (color2Precent > 3 && color2Precent < 7) numberOnDice = 2;
-    if (color2Precent > 6 && color2Precent < 10) numberOnDice = 3;
-    if (color2Precent > 9 && color2Precent < 16) numberOnDice = 4;
-    if (color2Precent > 15 && color2Precent < 17) numberOnDice = 5;
-    if (color2Precent > 16) numberOnDice = 6;
+    if (numberOnDice < 1){
+      numberOnDice = 1;
+    }
+    
     updateDices();
   }
 
